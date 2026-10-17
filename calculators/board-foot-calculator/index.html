@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Board Foot Calculator — Lumber Volume &amp; Cost</title>
+  <meta name="description" content="Free board foot calculator: enter lumber thickness, width, length and board count to get total board feet and estimated cost. For woodworkers &amp; DIYers.">
+  <link rel="canonical" href="https://mtansari8765lab.github.io/trade-calc/calculators/board-foot-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TradeCalc">
+  <meta property="og:title" content="Board Foot Calculator — Lumber Volume &amp; Cost">
+  <meta property="og:description" content="Free board foot calculator: enter lumber thickness, width, length and board count to get total board feet and estimated cost. For woodworkers &amp; DIYers.">
+  <meta property="og:url" content="https://mtansari8765lab.github.io/trade-calc/calculators/board-foot-calculator/">
+  <meta property="og:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Board Foot Calculator — Lumber Volume &amp; Cost">
+  <meta name="twitter:description" content="Free board foot calculator: enter lumber thickness, width, length and board count to get total board feet and estimated cost. For woodworkers &amp; DIYers.">
+  <meta name="twitter:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <link rel="stylesheet" href="../../assets/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-39XP28RSP9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-39XP28RSP9');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8008490095120298"
+     crossorigin="anonymous"></script>
+</head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a board foot?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A board foot is a unit of lumber volume equal to 144 cubic inches — for example, a board 1 inch thick, 12 inches wide, and 12 inches long. Hardwood lumber is priced per board foot." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you calculate board feet?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Multiply thickness (inches) × width (inches) × length (feet), then divide by 12. A 1×6 that is 8 feet long = (1 × 6 × 8) ÷ 12 = 4 board feet." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I use nominal or actual dimensions?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Actual dimensions. A nominal 2x4 is really 1.5 × 3.5 inches, which changes the board-foot count. Always measure the real wood." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many board feet are in a 2x4x8?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Using actual dimensions (1.5 × 3.5 in, 8 ft): (1.5 × 3.5 × 8) ÷ 12 = 3.5 board feet." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is hardwood sold by board foot instead of by the piece?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Because hardwood comes in random widths and lengths from the mill. Board feet normalize everything to pure volume, so a wide short board and a narrow long board are priced fairly." }
+      }
+    ]
+  }
+  </script>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="TradeCalc home">
+        <span class="brand-name">TradeCalc</span>
+        <span class="brand-tag">Free calculators for DIYers, homeowners &amp; pros.</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a> › <a href="../../calculators/index.html">Calculators</a> › <span aria-current="page">Board Foot Calculator</span>
+    </nav>
+
+    <h1>Board Foot Calculator</h1>
+    <p><strong>Hardwood is priced by the <strong>board foot</strong> — a volume equal to a 12×12×1 inch board. Enter your lumber dimensions to get board feet and cost, instantly, in your browser.</strong></p>
+
+    <section class="tool-box" aria-labelledby="calc-h">
+      <h2 id="calc-h" style="margin-top:0">Board Foot Calculator</h2>
+      <div id="calc-form">
+        <div class="form-row">
+      <div class="form-field">
+        <label for="f-thickness">Thickness (in)</label>
+        <input type="number" id="f-thickness" data-field="thickness" inputmode="decimal" min="0" step="any" placeholder="e.g. 1">
+      </div>
+
+      <div class="form-field">
+        <label for="f-width">Width (in)</label>
+        <input type="number" id="f-width" data-field="width" inputmode="decimal" min="0" step="any" placeholder="e.g. 6">
+      </div>
+
+      <div class="form-field">
+        <label for="f-length">Length (ft)</label>
+        <input type="number" id="f-length" data-field="length" inputmode="decimal" min="0" step="any" placeholder="e.g. 8">
+      </div>
+
+      <div class="form-field">
+        <label for="f-boards">Number of boards</label>
+        <input type="number" id="f-boards" data-field="boards" inputmode="decimal" min="0" step="any" placeholder="e.g. 10">
+      </div>
+
+      <div class="form-field">
+        <label for="f-price">Price per board foot (optional) ($)</label>
+        <input type="number" id="f-price" data-field="price" inputmode="decimal" min="0" step="any" placeholder="e.g. 8.50">
+      </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="calc-go">Calculate</button>
+      </div>
+      <div class="error" id="calc-err" style="display:none" role="alert"></div>
+      <div class="result" id="calc-out" aria-live="polite">Enter your measurements and press Calculate.</div>
+    </section>
+
+    <section class="prose" aria-labelledby="about-calc">
+      <h2 id="about-calc">About this board foot calculator</h2>
+      <p>Lumberyards sell hardwood by the <strong>board foot</strong>, not by the board. One board foot is 144 cubic inches of wood — the volume of a board 12 inches wide, 12 inches long, and 1 inch thick. The formula is (thickness in inches × width in inches × length in feet) ÷ 12.</p>
+      <p>Note that lumber dimensions here are <strong>actual</strong> dimensions, not nominal. A "2x4" is actually 1.5 × 3.5 inches — but board-foot pricing for construction softwood is usually quoted per piece anyway. This calculator shines for hardwoods (oak, walnut, maple, cherry) where per-board-foot pricing is the norm and a miscalculation gets expensive fast.</p>
+      <p>Enter an optional price per board foot and the calculator totals your materials cost — handy when comparing species or deciding whether that walnut upgrade fits the budget.</p>
+      <h2>How to use</h2>
+      <ol>
+        <li>Measure the <strong>actual thickness and width</strong> of your boards in inches and the <strong>length in feet</strong>.</li>
+        <li>Enter how many identical boards you need.</li>
+        <li>Optionally add the <strong>price per board foot</strong> from your lumberyard quote.</li>
+        <li>Press <strong>Calculate</strong> for total board feet and estimated cost.</li>
+      </ol>
+
+      <h2>Good to know</h2>
+      <ul>
+        <li>Uses actual (not nominal) dimensions — measure the wood, don't trust the label.</li>
+        <li>Does not account for waste, defects, or planing loss; buy 15–20% extra for furniture-grade work.</li>
+        <li>Prices vary wildly by species, grade, and region — treat the cost figure as a planning estimate.</li>
+      </ul>
+    </section>
+
+    <section class="prose faq" aria-labelledby="calc-faq">
+      <h2 id="calc-faq">Frequently asked questions</h2>
+      <details>
+        <summary>What is a board foot?</summary>
+        <p>A board foot is a unit of lumber volume equal to 144 cubic inches — for example, a board 1 inch thick, 12 inches wide, and 12 inches long. Hardwood lumber is priced per board foot.</p>
+      </details>
+      <details>
+        <summary>How do you calculate board feet?</summary>
+        <p>Multiply thickness (inches) × width (inches) × length (feet), then divide by 12. A 1×6 that is 8 feet long = (1 × 6 × 8) ÷ 12 = 4 board feet.</p>
+      </details>
+      <details>
+        <summary>Do I use nominal or actual dimensions?</summary>
+        <p>Actual dimensions. A nominal 2x4 is really 1.5 × 3.5 inches, which changes the board-foot count. Always measure the real wood.</p>
+      </details>
+      <details>
+        <summary>How many board feet are in a 2x4x8?</summary>
+        <p>Using actual dimensions (1.5 × 3.5 in, 8 ft): (1.5 × 3.5 × 8) ÷ 12 = 3.5 board feet.</p>
+      </details>
+      <details>
+        <summary>Why is hardwood sold by board foot instead of by the piece?</summary>
+        <p>Because hardwood comes in random widths and lengths from the mill. Board feet normalize everything to pure volume, so a wide short board and a narrow long board are priced fairly.</p>
+      </details>
+    </section>
+
+    <section class="related-tools" aria-labelledby="related">
+      <h2 id="related">Related calculators</h2>
+      <div class="tool-grid">
+        <a class="tool-card" href="../deck-board-calculator/index.html"><h3>Deck Board Calculator</h3><p>Decking boards for any deck size.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../fence-calculator/index.html"><h3>Fence Calculator</h3><p>Pickets, posts & rails for any fence run.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../concrete-calculator/index.html"><h3>Concrete Calculator</h3><p>Bags of concrete & cubic yards for slabs, footings & posts.</p><span class="card-cta">Open calculator →</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy</a></li>
+          <li><a href="../../terms.html">Terms</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">© <span id="year">2026</span> TradeCalc. Free calculators for DIYers, homeowners &amp; pros.</p>
+    </div>
+  </footer>
+    <script src="../../assets/logic/board-foot-calculator.js"></script>
+
+  <script>
+    (function () {
+      var T = window.TradeCalc;
+      document.getElementById('calc-go').addEventListener('click', function () {
+        var vals = {};
+        var inputs = document.querySelectorAll('#calc-form [data-field]');
+        var err = document.getElementById('calc-err');
+        var out = document.getElementById('calc-out');
+        Array.prototype.forEach.call(inputs, function (el) {
+          vals[el.getAttribute('data-field')] = el.value;
+        });
+        try {
+          out.innerHTML = T['boardfoot'](vals);
+          T.hideError(err);
+        } catch (e) {
+          T.showError(err, e.message);
+        }
+      });
+    })();
+  </script>
+
+  <script src="../../assets/main.js"></script>
+</body>
+</html>
