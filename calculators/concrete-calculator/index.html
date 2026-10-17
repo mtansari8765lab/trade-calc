@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concrete Calculator — How Many Bags of Concrete Do I Need?</title>
+  <meta name="description" content="Free concrete calculator: enter slab dimensions to get cubic yards, cubic feet, and the number of 60 lb or 80 lb bags of concrete mix you need, with waste allowance.">
+  <link rel="canonical" href="https://mtansari8765lab.github.io/trade-calc/calculators/concrete-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TradeCalc">
+  <meta property="og:title" content="Concrete Calculator — How Many Bags of Concrete Do I Need?">
+  <meta property="og:description" content="Free concrete calculator: enter slab dimensions to get cubic yards, cubic feet, and the number of 60 lb or 80 lb bags of concrete mix you need, with waste allowance.">
+  <meta property="og:url" content="https://mtansari8765lab.github.io/trade-calc/calculators/concrete-calculator/">
+  <meta property="og:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Concrete Calculator — How Many Bags of Concrete Do I Need?">
+  <meta name="twitter:description" content="Free concrete calculator: enter slab dimensions to get cubic yards, cubic feet, and the number of 60 lb or 80 lb bags of concrete mix you need, with waste allowance.">
+  <meta name="twitter:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <link rel="stylesheet" href="../../assets/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-39XP28RSP9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-39XP28RSP9');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8008490095120298"
+     crossorigin="anonymous"></script>
+</head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many bags of concrete do I need for a 10x10 slab?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A 10×10 ft slab at 4 inches thick is about 1.24 cubic yards (33.3 cubic feet), which works out to 56 bags of 80 lb mix or 74 bags of 60 lb mix before waste. Add 10% and you are at 62 eighty-pound bags. Enter your exact dimensions above for your project." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many cubic feet are in a yard of concrete?",
+        "acceptedAnswer": { "@type": "Answer", "text": "One cubic yard = 27 cubic feet. A standard full-size mixer truck carries about 10 cubic yards." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many 80 lb bags of concrete are in a yard?",
+        "acceptedAnswer": { "@type": "Answer", "text": "About 45 eighty-pound bags make one cubic yard (27 ÷ 0.6 = 45). For 60 lb bags it is 60 bags per yard." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the formula for concrete volume?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Length (ft) × width (ft) × thickness (in ÷ 12) = cubic feet. Divide by 27 for cubic yards." }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I order ready-mix or bags?",
+        "acceptedAnswer": { "@type": "Answer", "text": "As a rule of thumb, bags make sense under about half a cubic yard (roughly 20 eighty-pound bags). Above that, ready-mix is usually cheaper and far less labor." }
+      }
+    ]
+  }
+  </script>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="TradeCalc home">
+        <span class="brand-name">TradeCalc</span>
+        <span class="brand-tag">Free calculators for DIYers, homeowners &amp; pros.</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a> › <a href="../../calculators/index.html">Calculators</a> › <span aria-current="page">Concrete Calculator</span>
+    </nav>
+
+    <h1>Concrete Calculator</h1>
+    <p><strong>Find out exactly how much concrete your project needs — in cubic yards for ready-mix orders, or in bags for mix-it-yourself jobs. Runs 100% in your browser.</strong></p>
+
+    <section class="tool-box" aria-labelledby="calc-h">
+      <h2 id="calc-h" style="margin-top:0">Concrete Calculator</h2>
+      <div id="calc-form">
+        <div class="form-row">
+      <div class="form-field">
+        <label for="f-length">Length (ft)</label>
+        <input type="number" id="f-length" data-field="length" inputmode="decimal" min="0" step="any" placeholder="e.g. 10">
+      </div>
+
+      <div class="form-field">
+        <label for="f-width">Width (ft)</label>
+        <input type="number" id="f-width" data-field="width" inputmode="decimal" min="0" step="any" placeholder="e.g. 10">
+      </div>
+
+      <div class="form-field">
+        <label for="f-thickness">Thickness (in)</label>
+        <input type="number" id="f-thickness" data-field="thickness" inputmode="decimal" min="0" step="any" placeholder="e.g. 4">
+      </div>
+
+      <div class="form-field">
+        <label for="f-bag">Bag size</label>
+        <select id="f-bag" data-field="bag"><option value="80" selected>80 lb bag (≈ 0.6 cu ft)</option><option value="60">60 lb bag (≈ 0.45 cu ft)</option><option value="ready">Ready-mix (cubic yards only)</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-waste">Waste allowance</label>
+        <select id="f-waste" data-field="waste"><option value="0">0% — exact</option><option value="5">5%</option><option value="10" selected>10% — recommended</option><option value="15">15% — uneven ground</option></select>
+      </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="calc-go">Calculate</button>
+      </div>
+      <div class="error" id="calc-err" style="display:none" role="alert"></div>
+      <div class="result" id="calc-out" aria-live="polite">Enter your measurements and press Calculate.</div>
+    </section>
+
+    <section class="prose" aria-labelledby="about-calc">
+      <h2 id="about-calc">About this concrete calculator</h2>
+      <p>Ordering too little concrete stalls a pour; ordering too much wastes money. This calculator converts your slab, footing, or post-hole dimensions into the two numbers suppliers actually use: <strong>cubic yards</strong> for ready-mix trucks and <strong>bag counts</strong> for mix-it-yourself jobs with 60 lb or 80 lb bags.</p>
+      <p>The math is simple volume: length × width × thickness, converted to cubic feet and then cubic yards (27 cubic feet per yard). Bag counts use the yield printed on the bag — an 80 lb bag of concrete mix yields about 0.6 cubic feet, a 60 lb bag about 0.45 cubic feet. The calculator rounds bag counts <em>up</em>, because a half bag short is a ruined afternoon.</p>
+      <p>Always add a waste allowance. Forms leak, subgrades are never perfectly level, and a slab that is half an inch thicker than planned across 100 square feet eats an extra 4 cubic feet of concrete. Ten percent is the standard recommendation for slabs; use 15% on uneven or hand-dug ground.</p>
+      <h2>How to use</h2>
+      <ol>
+        <li>Measure the <strong>length and width</strong> of your slab or footing in feet.</li>
+        <li>Enter the <strong>thickness in inches</strong> — 4 inches is standard for patios and walkways, 6 inches for driveways.</li>
+        <li>Choose <strong>bag size</strong> (or ready-mix if you are ordering a truck) and a <strong>waste allowance</strong>.</li>
+        <li>Press <strong>Calculate</strong>. For truck orders, call the plant with the cubic-yard figure.</li>
+      </ol>
+
+      <h2>Good to know</h2>
+      <ul>
+        <li>Bag yields vary slightly by brand and mix — check the yield printed on your specific bag.</li>
+        <li>Footings, thickened edges, and post holes are separate volumes; calculate each and add them.</li>
+        <li>This is a materials estimate, not structural advice. Slabs carrying vehicles or structures need proper thickness, rebar, and often a permit — check local code.</li>
+      </ul>
+    </section>
+
+    <section class="prose faq" aria-labelledby="calc-faq">
+      <h2 id="calc-faq">Frequently asked questions</h2>
+      <details>
+        <summary>How many bags of concrete do I need for a 10x10 slab?</summary>
+        <p>A 10×10 ft slab at 4 inches thick is about 1.24 cubic yards (33.3 cubic feet), which works out to 56 bags of 80 lb mix or 74 bags of 60 lb mix before waste. Add 10% and you are at 62 eighty-pound bags. Enter your exact dimensions above for your project.</p>
+      </details>
+      <details>
+        <summary>How many cubic feet are in a yard of concrete?</summary>
+        <p>One cubic yard = 27 cubic feet. A standard full-size mixer truck carries about 10 cubic yards.</p>
+      </details>
+      <details>
+        <summary>How many 80 lb bags of concrete are in a yard?</summary>
+        <p>About 45 eighty-pound bags make one cubic yard (27 ÷ 0.6 = 45). For 60 lb bags it is 60 bags per yard.</p>
+      </details>
+      <details>
+        <summary>What is the formula for concrete volume?</summary>
+        <p>Length (ft) × width (ft) × thickness (in ÷ 12) = cubic feet. Divide by 27 for cubic yards.</p>
+      </details>
+      <details>
+        <summary>Should I order ready-mix or bags?</summary>
+        <p>As a rule of thumb, bags make sense under about half a cubic yard (roughly 20 eighty-pound bags). Above that, ready-mix is usually cheaper and far less labor.</p>
+      </details>
+    </section>
+
+    <section class="related-tools" aria-labelledby="related">
+      <h2 id="related">Related calculators</h2>
+      <div class="tool-grid">
+        <a class="tool-card" href="../gravel-calculator/index.html"><h3>Gravel Calculator</h3><p>Cubic yards & tons of gravel/aggregate.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../mulch-calculator/index.html"><h3>Mulch Calculator</h3><p>Cubic yards or bags of mulch for beds.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../cost-to-pour-concrete-slab/index.html"><h3>Concrete Slab Cost Estimator</h3><p>What will that slab cost? Materials + all-in range.</p><span class="card-cta">Open calculator →</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy</a></li>
+          <li><a href="../../terms.html">Terms</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">© <span id="year">2026</span> TradeCalc. Free calculators for DIYers, homeowners &amp; pros.</p>
+    </div>
+  </footer>
+    <script src="../../assets/logic/concrete-calculator.js"></script>
+
+  <script>
+    (function () {
+      var T = window.TradeCalc;
+      document.getElementById('calc-go').addEventListener('click', function () {
+        var vals = {};
+        var inputs = document.querySelectorAll('#calc-form [data-field]');
+        var err = document.getElementById('calc-err');
+        var out = document.getElementById('calc-out');
+        Array.prototype.forEach.call(inputs, function (el) {
+          vals[el.getAttribute('data-field')] = el.value;
+        });
+        try {
+          out.innerHTML = T['concrete'](vals);
+          T.hideError(err);
+        } catch (e) {
+          T.showError(err, e.message);
+        }
+      });
+    })();
+  </script>
+
+  <script src="../../assets/main.js"></script>
+</body>
+</html>
