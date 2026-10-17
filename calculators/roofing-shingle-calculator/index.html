@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roofing Shingle Calculator — Bundles &amp; Squares</title>
+  <meta name="description" content="Free roofing shingle calculator: enter roof dimensions and pitch to get roofing squares, shingle bundles, and waste allowance. Plan your re-roof with confidence.">
+  <link rel="canonical" href="https://mtansari8765lab.github.io/trade-calc/calculators/roofing-shingle-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TradeCalc">
+  <meta property="og:title" content="Roofing Shingle Calculator — Bundles &amp; Squares">
+  <meta property="og:description" content="Free roofing shingle calculator: enter roof dimensions and pitch to get roofing squares, shingle bundles, and waste allowance. Plan your re-roof with confidence.">
+  <meta property="og:url" content="https://mtansari8765lab.github.io/trade-calc/calculators/roofing-shingle-calculator/">
+  <meta property="og:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Roofing Shingle Calculator — Bundles &amp; Squares">
+  <meta name="twitter:description" content="Free roofing shingle calculator: enter roof dimensions and pitch to get roofing squares, shingle bundles, and waste allowance. Plan your re-roof with confidence.">
+  <meta name="twitter:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <link rel="stylesheet" href="../../assets/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-39XP28RSP9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-39XP28RSP9');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8008490095120298"
+     crossorigin="anonymous"></script>
+</head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many shingles do I need for a 20x30 roof?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A 20×30 ft roof footprint is 600 sq ft; with a 6/12 pitch that is about 671 sq ft of roof surface, or 6.7 squares — roughly 21 bundles with 10% waste. Enter your exact pitch above for your number." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a roofing square?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A roofing square is 100 square feet of roof coverage. Roofers quote materials and labor per square." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many bundles of shingles per square?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Three bundles per square for standard 3-tab shingles. Architectural/dimensional shingles can require 3–4 bundles per square — check the manufacturer's spec." }
+      },
+      {
+        "@type": "Question",
+        "name": "How does roof pitch affect shingle quantity?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Steeper roofs have more surface area. A 12/12 pitch roof has about 41% more area than its flat footprint; a 6/12 pitch adds about 12%. The calculator applies the pitch multiplier automatically." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much waste should I add for shingles?",
+        "acceptedAnswer": { "@type": "Answer", "text": "10% for a simple gable roof, 15% for roofs with hips, valleys, dormers, or skylights." }
+      }
+    ]
+  }
+  </script>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="TradeCalc home">
+        <span class="brand-name">TradeCalc</span>
+        <span class="brand-tag">Free calculators for DIYers, homeowners &amp; pros.</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a> › <a href="../../calculators/index.html">Calculators</a> › <span aria-current="page">Roofing Shingle Calculator</span>
+    </nav>
+
+    <h1>Roofing Shingle Calculator</h1>
+    <p><strong>Roofing is sold by the <strong>square</strong> (100 sq ft) and shingles by the <strong>bundle</strong> (3 bundles per square). Enter your roof size and pitch to get both, with waste included.</strong></p>
+
+    <section class="tool-box" aria-labelledby="calc-h">
+      <h2 id="calc-h" style="margin-top:0">Roofing Shingle Calculator</h2>
+      <div id="calc-form">
+        <div class="form-row">
+      <div class="form-field">
+        <label for="f-length">Roof length (eave to eave) (ft)</label>
+        <input type="number" id="f-length" data-field="length" inputmode="decimal" min="0" step="any" placeholder="e.g. 40">
+      </div>
+
+      <div class="form-field">
+        <label for="f-width">Roof width (eave to ridge, one slope × 2) (ft)</label>
+        <input type="number" id="f-width" data-field="width" inputmode="decimal" min="0" step="any" placeholder="e.g. 30">
+      </div>
+
+      <div class="form-field">
+        <label for="f-pitch">Roof pitch</label>
+        <select id="f-pitch" data-field="pitch"><option value="1.0">Flat / low slope (up to 3/12)</option><option value="1.054">4/12 pitch</option><option value="1.118" selected>6/12 pitch — common</option><option value="1.202">8/12 pitch</option><option value="1.302">10/12 pitch</option><option value="1.414">12/12 pitch — steep</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-waste">Waste allowance</label>
+        <select id="f-waste" data-field="waste"><option value="10" selected>10% — simple roof</option><option value="15">15% — hips, valleys, dormers</option></select>
+      </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="calc-go">Calculate</button>
+      </div>
+      <div class="error" id="calc-err" style="display:none" role="alert"></div>
+      <div class="result" id="calc-out" aria-live="polite">Enter your measurements and press Calculate.</div>
+    </section>
+
+    <section class="prose" aria-labelledby="about-calc">
+      <h2 id="about-calc">About this roofing shingle calculator</h2>
+      <p>A roofing <strong>square</strong> covers 100 square feet, and a square of standard 3-tab shingles comes as <strong>3 bundles</strong>. (Architectural shingles vary — some need 3 to 4 bundles per square, so check your product.) This calculator starts from your roof's footprint, corrects for <strong>pitch</strong> — a steeper roof has more surface area than its footprint suggests — and adds waste for cuts around hips, valleys, and penetrations.</p>
+      <p>Measure length along the eave and width from eave to ridge on one slope, then double the width for both slopes. If your roof has dormers or complex geometry, break it into rectangles and run each through the calculator, then add the results.</p>
+      <p>The 10% waste default suits a simple gable roof. Bump it to 15% for roofs with hips, valleys, dormers, or skylights — every angle means more cut shingles in the scrap pile.</p>
+      <h2>How to use</h2>
+      <ol>
+        <li>Measure the <strong>roof length</strong> along the eave in feet.</li>
+        <li>Measure from <strong>eave to ridge</strong> on one slope and double it for the <strong>roof width</strong>.</li>
+        <li>Select your <strong>roof pitch</strong> — 6/12 is the most common residential pitch.</li>
+        <li>Choose a <strong>waste allowance</strong> (15% for complex roofs) and press <strong>Calculate</strong>.</li>
+      </ol>
+
+      <h2>Good to know</h2>
+      <ul>
+        <li>Assumes 3 bundles per square (standard 3-tab). Verify bundles-per-square for your shingle product.</li>
+        <li>Does not include underlayment, ice-and-water shield, flashing, drip edge, ridge caps, or nails — budget those separately.</li>
+        <li>Complex roofs should be measured in sections; a single rectangle will undercount.</li>
+        <li>Roofing is skilled, dangerous work at height. This estimates materials only — get professional quotes for labor.</li>
+      </ul>
+    </section>
+
+    <section class="prose faq" aria-labelledby="calc-faq">
+      <h2 id="calc-faq">Frequently asked questions</h2>
+      <details>
+        <summary>How many shingles do I need for a 20x30 roof?</summary>
+        <p>A 20×30 ft roof footprint is 600 sq ft; with a 6/12 pitch that is about 671 sq ft of roof surface, or 6.7 squares — roughly 21 bundles with 10% waste. Enter your exact pitch above for your number.</p>
+      </details>
+      <details>
+        <summary>What is a roofing square?</summary>
+        <p>A roofing square is 100 square feet of roof coverage. Roofers quote materials and labor per square.</p>
+      </details>
+      <details>
+        <summary>How many bundles of shingles per square?</summary>
+        <p>Three bundles per square for standard 3-tab shingles. Architectural/dimensional shingles can require 3–4 bundles per square — check the manufacturer's spec.</p>
+      </details>
+      <details>
+        <summary>How does roof pitch affect shingle quantity?</summary>
+        <p>Steeper roofs have more surface area. A 12/12 pitch roof has about 41% more area than its flat footprint; a 6/12 pitch adds about 12%. The calculator applies the pitch multiplier automatically.</p>
+      </details>
+      <details>
+        <summary>How much waste should I add for shingles?</summary>
+        <p>10% for a simple gable roof, 15% for roofs with hips, valleys, dormers, or skylights.</p>
+      </details>
+    </section>
+
+    <section class="related-tools" aria-labelledby="related">
+      <h2 id="related">Related calculators</h2>
+      <div class="tool-grid">
+        <a class="tool-card" href="../cost-to-shingle-roof/index.html"><h3>Roof Replacement Cost Estimator</h3><p>What will a new shingle roof cost? Per-square math.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../paint-calculator/index.html"><h3>Paint Calculator</h3><p>Gallons of paint for walls, with coats.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../drywall-calculator/index.html"><h3>Drywall Calculator</h3><p>Drywall sheets for any wall area, with waste.</p><span class="card-cta">Open calculator →</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy</a></li>
+          <li><a href="../../terms.html">Terms</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">© <span id="year">2026</span> TradeCalc. Free calculators for DIYers, homeowners &amp; pros.</p>
+    </div>
+  </footer>
+    <script src="../../assets/logic/roofing-shingle-calculator.js"></script>
+
+  <script>
+    (function () {
+      var T = window.TradeCalc;
+      document.getElementById('calc-go').addEventListener('click', function () {
+        var vals = {};
+        var inputs = document.querySelectorAll('#calc-form [data-field]');
+        var err = document.getElementById('calc-err');
+        var out = document.getElementById('calc-out');
+        Array.prototype.forEach.call(inputs, function (el) {
+          vals[el.getAttribute('data-field')] = el.value;
+        });
+        try {
+          out.innerHTML = T['roofing'](vals);
+          T.hideError(err);
+        } catch (e) {
+          T.showError(err, e.message);
+        }
+      });
+    })();
+  </script>
+
+  <script src="../../assets/main.js"></script>
+</body>
+</html>
