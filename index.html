@@ -21,6 +21,7 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'analytics_storage': 'denied'});
   gtag('js', new Date());
   gtag('config', 'G-39XP28RSP9');
 </script>
@@ -76,10 +77,39 @@
       </div>
       <p id="filter-empty" class="muted" style="display:none">No calculators match your search.</p>
     </section>
+    <section class="prose" aria-labelledby="why-math">
+      <h2 id="why-math">Why material math matters</h2>
+      <p>Every home improvement project is a word problem: how many bags of concrete, how many shingles, how many fence pickets &#8212; and what will it all cost? Get the math wrong in one direction and you overbuy hundreds of dollars of material that sits in the garage for a decade. Get it wrong in the other direction and the project stalls halfway: the concrete truck leaves, the crew stands around, and the second delivery fee costs more than the extra 10% of material would have.</p>
+      <p>That is the gap these calculators fill. Each one does the trade-specific arithmetic &#8212; board feet for lumber, roofing squares for shingles, cubic yards for concrete and gravel, coverage math for paint &#8212; and bakes in the waste allowances pros actually use, so the number you get is the number to order. The cost estimators go one step further, turning material quantities into planning ranges so you can sanity-check contractor bids before anyone starts work.</p>
+      <p>A note on the numbers: material calculators give you quantities to buy. Cost estimators give you <strong>planning estimates, not contractor quotes</strong> &#8212; they are built for budgeting and bid-checking, and local quotes always have the final say.</p>
+    </section>
+    <section class="prose" aria-labelledby="by-project">
+      <h2 id="by-project">Calculators by project</h2>
+      <p><strong>Concrete &amp; masonry.</strong> Pouring a slab, setting posts, or building footings? The <a href="calculators/concrete-calculator/index.html">Concrete Calculator</a> converts your dimensions into cubic yards for ready-mix orders or bag counts for mix-it-yourself jobs, and the <a href="calculators/cost-to-pour-concrete-slab/index.html">Concrete Slab Cost Estimator</a> turns that volume into a materials-plus-labor planning range.</p>
+      <p><strong>Lumber &amp; decking.</strong> Hardwood is priced by the board foot, not the board &#8212; the <a href="calculators/board-foot-calculator/index.html">Board Foot Calculator</a> keeps you from overpaying at the lumberyard. Building the deck itself? The <a href="calculators/deck-board-calculator/index.html">Deck Board Calculator</a> counts decking boards for any size deck, and the <a href="calculators/cost-to-build-deck/index.html">Deck Cost Estimator</a> prices the whole project per square foot.</p>
+      <p><strong>Roofing.</strong> The <a href="calculators/roofing-shingle-calculator/index.html">Roofing Shingle Calculator</a> turns roof footprint and pitch into shingle bundles and roofing squares, and the <a href="calculators/cost-to-shingle-roof/index.html">Roof Replacement Cost Estimator</a> gives you a per-square planning range to compare against roofer bids.</p>
+      <p><strong>Fencing.</strong> The <a href="calculators/fence-calculator/index.html">Fence Calculator</a> counts pickets, posts, and rails for any fence run &#8212; the full lumber shopping list in one pass, plus concrete guidance for the posts.</p>
+      <p><strong>Interior work.</strong> Drywalling a room? The <a href="calculators/drywall-calculator/index.html">Drywall Calculator</a> counts sheets with waste built in. The <a href="calculators/paint-calculator/index.html">Paint Calculator</a> converts wall area and coats into gallons, and the <a href="calculators/tile-calculator/index.html">Tile Calculator</a> counts floor tiles from room and tile size.</p>
+      <p><strong>Landscaping.</strong> The <a href="calculators/mulch-calculator/index.html">Mulch Calculator</a> gives you cubic yards or bag counts for beds, the <a href="calculators/gravel-calculator/index.html">Gravel Calculator</a> handles driveways and paths in yards and tons, the <a href="calculators/sod-calculator/index.html">Sod Calculator</a> counts rolls and pallets for new lawns, and the <a href="calculators/paver-calculator/index.html">Paver Calculator</a> covers patios and walkways including base gravel and sand.</p>
+      <p><strong>Stairs.</strong> The <a href="calculators/stair-calculator/index.html">Stair Calculator</a> works out riser count and height, tread count, total run, and stringer length from your total rise &#8212; the layout math carpenters do before cutting a single stringer.</p>
+    </section>
+    <section class="prose" aria-labelledby="who-for">
+      <h2 id="who-for">Who TradeCalc is for</h2>
+      <p><strong>DIY homeowners</strong> planning their first big project &#8212; the calculators answer &#8220;how much do I buy?&#8221; before the first trip to the store, and the worked examples on each page show exactly how the math works. <strong>Weekend warriors</strong> who already know the trades get a ten-second answer instead of ten minutes with a phone calculator. And <strong>pros</strong> use them for quick on-site estimates and material takeoffs when a full estimating package would be overkill.</p>
+      <p>Everything runs 100% in your browser. There is no signup, no account, and nothing you type is uploaded or stored anywhere &#8212; your measurements never leave your device. Free, fast, and private: that is the whole pitch.</p>
+    </section>
     <section class="prose" aria-labelledby="why">
       <h2 id="why">Why TradeCalc?</h2>
       <p>Home improvement runs on arithmetic: how many bags of concrete, how many shingles, how many fence pickets — and what it will all cost. Getting the math wrong means a stalled project or wasted money. TradeCalc gives you job-site calculators for the measurements tradespeople and DIYers actually need, with waste allowances and cost ranges built in.</p>
       <p>Every calculator on this site runs entirely in your browser with JavaScript. Your measurements are never uploaded, stored, or sent anywhere. Cost estimators are clearly labeled as <strong>planning estimates, not contractor quotes</strong> — always get local quotes before you budget.</p>
+    </section>
+    <section class="prose" aria-labelledby="guides">
+      <h2 id="guides">Project guides</h2>
+      <p>In-depth guides with worked examples for the jobs our calculators cover:</p>
+      <ul>
+        <li><a href="guides/how-much-rebar-do-i-need/index.html">How much rebar do I need?</a> — bar sizes and weights, spacing rules, and a worked 10&times;10 ft slab example with total feet, sticks, and cost.</li>
+        <li><a href="guides/how-much-wallpaper-do-i-need/index.html">How much wallpaper do I need?</a> — measuring walls, single vs double rolls, pattern repeat waste, and a worked room example.</li>
+      </ul>
     </section>
   </main>
 
@@ -99,5 +129,30 @@
     </div>
   </footer>
   <script src="assets/main.js"></script>
+
+<div id="tc-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1f2937;color:#f9fafb;padding:14px 18px;font-size:14px;line-height:1.5;box-shadow:0 -2px 12px rgba(0,0,0,.25);font-family:system-ui,-apple-system,sans-serif;">
+  <span>We use cookies for anonymous analytics (Google Analytics) to see which pages are popular. No personal data is collected. <a href="https://mtansari8765lab.github.io/trade-calc/privacy.html" style="color:#93c5fd;text-decoration:underline;">Privacy policy</a></span>
+  <span style="display:inline-block;margin-left:12px;white-space:nowrap;margin-top:8px;">
+    <button id="tc-consent-accept" style="background:#2563eb;color:#fff;border:0;border-radius:6px;padding:8px 16px;margin-right:8px;cursor:pointer;font-size:14px;">Accept</button>
+    <button id="tc-consent-decline" style="background:transparent;color:#e5e7eb;border:1px solid #6b7280;border-radius:6px;padding:8px 16px;cursor:pointer;font-size:14px;">Decline</button>
+  </span>
+</div>
+<script>
+(function(){
+  var KEY='tc-consent-choice', banner=document.getElementById('tc-consent');
+  function apply(choice){
+    if(window.gtag){try{gtag('consent','update',{'analytics_storage':choice});}catch(e){}}
+    try{localStorage.setItem(KEY,choice);}catch(e){}
+    banner.hidden=true;
+  }
+  var saved=null;
+  try{saved=localStorage.getItem(KEY);}catch(e){}
+  if(saved==='granted'||saved==='denied'){ if(window.gtag){try{gtag('consent','update',{'analytics_storage':saved});}catch(e){}} }
+  else { banner.hidden=false; }
+  document.getElementById('tc-consent-accept').addEventListener('click',function(){apply('granted');});
+  document.getElementById('tc-consent-decline').addEventListener('click',function(){apply('denied');});
+})();
+</script>
+
 </body>
 </html>

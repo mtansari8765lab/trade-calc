@@ -21,6 +21,7 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'analytics_storage': 'denied'});
   gtag('js', new Date());
   gtag('config', 'G-39XP28RSP9');
 </script>
@@ -56,6 +57,26 @@
         "@type": "Question",
         "name": "Why is hardwood sold by board foot instead of by the piece?",
         "acceptedAnswer": { "@type": "Answer", "text": "Because hardwood comes in random widths and lengths from the mill. Board feet normalize everything to pure volume, so a wide short board and a narrow long board are priced fairly." }
+      },
+      {
+        "@type": "Question",
+        "name": "What do 4/4, 5/4, and 8/4 mean on a lumber price list?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Lumber thickness in quarters of an inch: 4/4 is 1 inch rough (surfacing brings it to about 3/4 in), 5/4 is 1-1/4 in rough, 8/4 is 2 in rough. The board-foot formula always uses the actual measured thickness, not the quarters label." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much extra lumber should I buy for waste?",
+        "acceptedAnswer": { "@type": "Answer", "text": "For furniture-grade work, buy 15-20% extra for defects, miscuts, and grain matching. A project needing 60 board feet means buying 69-72. For rough shop fixtures or framing, 10% is usually enough." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I compare lumber prices between two yards?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Compare dollars per board foot, never price per board - and check whether each quote is for rough or surfaced stock. A $9.50/bf rough quote beats $10.25/bf surfaced only if you own a planer; otherwise the surfaced board is the better deal." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a board foot the same as a linear foot?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. A linear foot measures length only. Ten linear feet of 1x6 is 5 board feet; ten linear feet of 2x12 is 20 board feet. Hardwood is priced by board feet because board widths and thicknesses vary." }
       }
     ]
   }
@@ -129,6 +150,12 @@
       <p>Lumberyards sell hardwood by the <strong>board foot</strong>, not by the board. One board foot is 144 cubic inches of wood — the volume of a board 12 inches wide, 12 inches long, and 1 inch thick. The formula is (thickness in inches × width in inches × length in feet) ÷ 12.</p>
       <p>Note that lumber dimensions here are <strong>actual</strong> dimensions, not nominal. A "2x4" is actually 1.5 × 3.5 inches — but board-foot pricing for construction softwood is usually quoted per piece anyway. This calculator shines for hardwoods (oak, walnut, maple, cherry) where per-board-foot pricing is the norm and a miscalculation gets expensive fast.</p>
       <p>Enter an optional price per board foot and the calculator totals your materials cost — handy when comparing species or deciding whether that walnut upgrade fits the budget.</p>
+      <h3>Worked example: pricing a walnut bookshelf project</h3>
+      <p>Say your bookshelf design calls for 20 boards of walnut, each measuring a true 3/4 inch thick, 7-1/4 inches wide, and 10 feet long, and your lumberyard quotes $9.50 per board foot. Per board: (0.75 &#215; 7.25 &#215; 10) &#247; 12 = 4.53 board feet. For 20 boards: 4.53 &#215; 20 = 90.63 board feet. At $9.50 per board foot, the lumber costs about $860.94 before waste.</p>
+      <p>Furniture-grade work needs a waste allowance for defects, miscuts, and grain matching &#8212; 20% is the standard. That brings the buy to 90.63 &#215; 1.2 = 108.75 board feet, or about $1,033.13 total. Notice how the waste allowance alone adds over $170: skipping it is the classic way a hardwood project blows its budget.</p>
+      <h3>Buying tips</h3>
+      <p>Hardwood is sold rough (thickness in quarters: 4/4, 5/4, 8/4) or surfaced (S2S/S4S). Surfaced boards cost more per board foot because the mill did the planing &#8212; but if you do not own a planer, the premium is usually worth it. Always check moisture content with a meter before buying: 6&#8211;8% is right for indoor furniture. Wood bought wet shrinks, cups, and twists as it dries in your shop, and no calculator can fix that.</p>
+      <p>When comparing lumberyards, normalize everything to dollars per board foot &#8212; and confirm whether each quote is for rough or surfaced stock. A yard quoting $9.50/bf rough beats $10.25/bf surfaced only if you can surface it yourself; otherwise the surfaced board is the better deal.</p>
       <h2>How to use</h2>
       <ol>
         <li>Measure the <strong>actual thickness and width</strong> of your boards in inches and the <strong>length in feet</strong>.</li>
@@ -142,6 +169,8 @@
         <li>Uses actual (not nominal) dimensions — measure the wood, don't trust the label.</li>
         <li>Does not account for waste, defects, or planing loss; buy 15–20% extra for furniture-grade work.</li>
         <li>Prices vary wildly by species, grade, and region — treat the cost figure as a planning estimate.</li>
+        <li>Hardwood thickness is quoted in quarters of an inch (4/4 = 1 in rough, 8/4 = 2 in rough). Surfaced boards (S2S/S4S) measure thinner than their rough label &#8212; measure the actual wood.</li>
+        <li>Check moisture content before you buy: 6&#8211;8% for indoor furniture. Wet lumber shrinks and twists as it dries, no matter how carefully you calculated.</li>
       </ul>
     </section>
 
@@ -166,6 +195,22 @@
       <details>
         <summary>Why is hardwood sold by board foot instead of by the piece?</summary>
         <p>Because hardwood comes in random widths and lengths from the mill. Board feet normalize everything to pure volume, so a wide short board and a narrow long board are priced fairly.</p>
+      </details>
+      <details>
+        <summary>What do 4/4, 5/4, and 8/4 mean on a lumber price list?</summary>
+        <p>Lumber thickness in quarters of an inch: 4/4 is 1 inch rough (surfacing brings it to about 3/4 in), 5/4 is 1-1/4 in rough, 8/4 is 2 in rough. The board-foot formula always uses the actual measured thickness, not the quarters label.</p>
+      </details>
+      <details>
+        <summary>How much extra lumber should I buy for waste?</summary>
+        <p>For furniture-grade work, buy 15&#8211;20% extra for defects, miscuts, and grain matching. A project needing 60 board feet means buying 69&#8211;72. For rough shop fixtures or framing, 10% is usually enough.</p>
+      </details>
+      <details>
+        <summary>How do I compare lumber prices between two yards?</summary>
+        <p>Compare dollars per board foot, never price per board &#8212; and check whether each quote is for rough or surfaced stock. A $9.50/bf rough quote beats $10.25/bf surfaced only if you own a planer; otherwise the surfaced board is the better deal.</p>
+      </details>
+      <details>
+        <summary>Is a board foot the same as a linear foot?</summary>
+        <p>No. A linear foot measures length only. Ten linear feet of 1&#215;6 is 5 board feet; ten linear feet of 2&#215;12 is 20 board feet. Hardwood is priced by board feet because board widths and thicknesses vary.</p>
       </details>
     </section>
 
@@ -218,5 +263,30 @@
   </script>
 
   <script src="../../assets/main.js"></script>
+
+<div id="tc-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1f2937;color:#f9fafb;padding:14px 18px;font-size:14px;line-height:1.5;box-shadow:0 -2px 12px rgba(0,0,0,.25);font-family:system-ui,-apple-system,sans-serif;">
+  <span>We use cookies for anonymous analytics (Google Analytics) to see which pages are popular. No personal data is collected. <a href="https://mtansari8765lab.github.io/trade-calc/privacy.html" style="color:#93c5fd;text-decoration:underline;">Privacy policy</a></span>
+  <span style="display:inline-block;margin-left:12px;white-space:nowrap;margin-top:8px;">
+    <button id="tc-consent-accept" style="background:#2563eb;color:#fff;border:0;border-radius:6px;padding:8px 16px;margin-right:8px;cursor:pointer;font-size:14px;">Accept</button>
+    <button id="tc-consent-decline" style="background:transparent;color:#e5e7eb;border:1px solid #6b7280;border-radius:6px;padding:8px 16px;cursor:pointer;font-size:14px;">Decline</button>
+  </span>
+</div>
+<script>
+(function(){
+  var KEY='tc-consent-choice', banner=document.getElementById('tc-consent');
+  function apply(choice){
+    if(window.gtag){try{gtag('consent','update',{'analytics_storage':choice});}catch(e){}}
+    try{localStorage.setItem(KEY,choice);}catch(e){}
+    banner.hidden=true;
+  }
+  var saved=null;
+  try{saved=localStorage.getItem(KEY);}catch(e){}
+  if(saved==='granted'||saved==='denied'){ if(window.gtag){try{gtag('consent','update',{'analytics_storage':saved});}catch(e){}} }
+  else { banner.hidden=false; }
+  document.getElementById('tc-consent-accept').addEventListener('click',function(){apply('granted');});
+  document.getElementById('tc-consent-decline').addEventListener('click',function(){apply('denied');});
+})();
+</script>
+
 </body>
 </html>

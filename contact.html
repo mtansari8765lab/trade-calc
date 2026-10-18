@@ -21,6 +21,7 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'analytics_storage': 'denied'});
   gtag('js', new Date());
   gtag('config', 'G-39XP28RSP9');
 </script>
@@ -48,9 +49,12 @@
   <main class="container">
     <h1>Contact</h1>
     <section class="prose">
-      <p>Questions, corrections, or calculator requests? Email us at <a href="mailto:mtansari8765@gmail.com">mtansari8765@gmail.com</a>.</p>
-      <p>Found a math error in a calculator? Please include the calculator name, the inputs you used, and what you expected — we fix verified errors promptly.</p>
-      <p>Want a calculator we don't have yet? Tell us the trade and the measurement — popular requests get built first.</p>
+      <p>Questions, corrections, or calculator requests? Email <a href="mailto:mtansari8765@gmail.com">mtansari8765@gmail.com</a>.</p>
+      <p><strong>Found a math error?</strong> Please include the calculator name, the exact inputs you used, and the result you expected. Every formula on this site is documented on its calculator page, so errors can be verified quickly — and verified errors get fixed promptly. Accurate math is the entire point of the site, and reader corrections genuinely improve it.</p>
+      <p><strong>Want a calculator we don't have yet?</strong> Tell us the trade and the measurement — for example "a calculator for topsoil in raised beds" or "a drywall screw count estimator." Popular requests get built first, and useful niche suggestions from working tradespeople jump the queue.</p>
+      <p><strong>Something broken?</strong> If a calculator won't calculate, a page looks wrong on your phone, or a link goes nowhere, a screenshot plus your device and browser name gets it fixed fastest. Include the page address if you can.</p>
+      <p><strong>A note on scope:</strong> this is a one-person project, not a contracting business. We can't quote your project, recommend a specific contractor, or give structural engineering advice. For anything involving structure, electrical, plumbing, or roofing, hire a licensed local professional — and see the <a href="terms.html">terms of use</a> for what the calculators are and aren't.</p>
+      <p>Please don't send marketing pitches, link-exchange requests, or SEO offers — they won't get a reply. Every genuine message gets read, and we aim to reply within a few days. Math corrections jump the queue.</p>
     </section>
   </main>
 
@@ -70,5 +74,30 @@
     </div>
   </footer>
   <script src="assets/main.js"></script>
+
+<div id="tc-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1f2937;color:#f9fafb;padding:14px 18px;font-size:14px;line-height:1.5;box-shadow:0 -2px 12px rgba(0,0,0,.25);font-family:system-ui,-apple-system,sans-serif;">
+  <span>We use cookies for anonymous analytics (Google Analytics) to see which pages are popular. No personal data is collected. <a href="https://mtansari8765lab.github.io/trade-calc/privacy.html" style="color:#93c5fd;text-decoration:underline;">Privacy policy</a></span>
+  <span style="display:inline-block;margin-left:12px;white-space:nowrap;margin-top:8px;">
+    <button id="tc-consent-accept" style="background:#2563eb;color:#fff;border:0;border-radius:6px;padding:8px 16px;margin-right:8px;cursor:pointer;font-size:14px;">Accept</button>
+    <button id="tc-consent-decline" style="background:transparent;color:#e5e7eb;border:1px solid #6b7280;border-radius:6px;padding:8px 16px;cursor:pointer;font-size:14px;">Decline</button>
+  </span>
+</div>
+<script>
+(function(){
+  var KEY='tc-consent-choice', banner=document.getElementById('tc-consent');
+  function apply(choice){
+    if(window.gtag){try{gtag('consent','update',{'analytics_storage':choice});}catch(e){}}
+    try{localStorage.setItem(KEY,choice);}catch(e){}
+    banner.hidden=true;
+  }
+  var saved=null;
+  try{saved=localStorage.getItem(KEY);}catch(e){}
+  if(saved==='granted'||saved==='denied'){ if(window.gtag){try{gtag('consent','update',{'analytics_storage':saved});}catch(e){}} }
+  else { banner.hidden=false; }
+  document.getElementById('tc-consent-accept').addEventListener('click',function(){apply('granted');});
+  document.getElementById('tc-consent-decline').addEventListener('click',function(){apply('denied');});
+})();
+</script>
+
 </body>
 </html>

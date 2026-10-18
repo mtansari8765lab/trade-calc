@@ -21,6 +21,7 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'analytics_storage': 'denied'});
   gtag('js', new Date());
   gtag('config', 'G-39XP28RSP9');
 </script>
@@ -51,11 +52,15 @@
       <p><strong>Last updated:</strong> October 2026.</p>
       <p>TradeCalc provides free calculators for informational and planning purposes. By using this site you agree to the following:</p>
       <ul>
-        <li><strong>Estimates, not professional advice.</strong> Material quantities are mathematical estimates. Cost estimators are planning ranges, not contractor quotes. Structural, electrical, plumbing, and roofing work must comply with local building codes and, where required, be performed or reviewed by licensed professionals.</li>
-        <li><strong>Verify before you buy or build.</strong> Always verify critical measurements and get local quotes before purchasing materials or starting work.</li>
-        <li><strong>No warranty.</strong> Calculators are provided as-is, without warranty of any kind. We are not liable for project costs, material overruns, or construction outcomes based on these tools.</li>
-        <li><strong>Acceptable use.</strong> Do not misuse, scrape at abusive rates, or misrepresent the site's output as professional advice.</li>
+        <li><strong>Estimates, not professional advice.</strong> Material quantities are mathematical estimates based on the dimensions you enter and the standard assumptions stated on each calculator page (coverage rates, waste allowances, conversion factors). Cost estimators are planning ranges, not contractor quotes — actual prices vary by region, supplier, site conditions, and project complexity. Nothing on this site is engineering, legal, or financial advice.</li>
+        <li><strong>Building codes and licensed professionals.</strong> Structural, electrical, plumbing, and roofing work must comply with local building codes and, where required, be performed or reviewed by licensed professionals. A calculator can tell you how many stair risers fit a 48-inch rise; it cannot tell you whether your stair design meets code — your local building department and a licensed pro can.</li>
+        <li><strong>Verify before you buy or build.</strong> Always verify critical measurements and get local quotes before purchasing materials or starting work. Double-check any number that money depends on: re-measure, compare against a second source, and confirm material specs with your supplier.</li>
+        <li><strong>No warranty.</strong> Calculators are provided as-is, without warranty of any kind — express or implied — including accuracy, reliability, or fitness for a particular purpose. We are not liable for project costs, material overruns, construction outcomes, or any damages arising from use of these tools.</li>
+        <li><strong>Free use.</strong> You are welcome to use the calculators for personal or commercial project planning. The site's design, text, and code remain the property of the site operator — please don't republish the site's content wholesale as your own.</li>
+        <li><strong>Acceptable use.</strong> Do not misuse the site, scrape it at abusive rates, attempt to disrupt it, or misrepresent the site's output as professional advice. Automated bulk querying that degrades the site for others may be blocked.</li>
       </ul>
+      <p><strong>Changes to these terms.</strong> These terms may be updated as the site grows; the "Last updated" date above will reflect the latest version. Continued use of the site after changes means you accept the updated terms.</p>
+      <p><strong>Questions</strong> about these terms: <a href="mailto:mtansari8765@gmail.com">mtansari8765@gmail.com</a>.</p>
     </section>
   </main>
 
@@ -75,5 +80,30 @@
     </div>
   </footer>
   <script src="assets/main.js"></script>
+
+<div id="tc-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1f2937;color:#f9fafb;padding:14px 18px;font-size:14px;line-height:1.5;box-shadow:0 -2px 12px rgba(0,0,0,.25);font-family:system-ui,-apple-system,sans-serif;">
+  <span>We use cookies for anonymous analytics (Google Analytics) to see which pages are popular. No personal data is collected. <a href="https://mtansari8765lab.github.io/trade-calc/privacy.html" style="color:#93c5fd;text-decoration:underline;">Privacy policy</a></span>
+  <span style="display:inline-block;margin-left:12px;white-space:nowrap;margin-top:8px;">
+    <button id="tc-consent-accept" style="background:#2563eb;color:#fff;border:0;border-radius:6px;padding:8px 16px;margin-right:8px;cursor:pointer;font-size:14px;">Accept</button>
+    <button id="tc-consent-decline" style="background:transparent;color:#e5e7eb;border:1px solid #6b7280;border-radius:6px;padding:8px 16px;cursor:pointer;font-size:14px;">Decline</button>
+  </span>
+</div>
+<script>
+(function(){
+  var KEY='tc-consent-choice', banner=document.getElementById('tc-consent');
+  function apply(choice){
+    if(window.gtag){try{gtag('consent','update',{'analytics_storage':choice});}catch(e){}}
+    try{localStorage.setItem(KEY,choice);}catch(e){}
+    banner.hidden=true;
+  }
+  var saved=null;
+  try{saved=localStorage.getItem(KEY);}catch(e){}
+  if(saved==='granted'||saved==='denied'){ if(window.gtag){try{gtag('consent','update',{'analytics_storage':saved});}catch(e){}} }
+  else { banner.hidden=false; }
+  document.getElementById('tc-consent-accept').addEventListener('click',function(){apply('granted');});
+  document.getElementById('tc-consent-decline').addEventListener('click',function(){apply('denied');});
+})();
+</script>
+
 </body>
 </html>
