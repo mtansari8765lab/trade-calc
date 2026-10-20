@@ -55,6 +55,16 @@
       },
       {
         "@type": "Question",
+        "name": "How much cement, sand and aggregate do I need for a 10x10 slab?",
+        "acceptedAnswer": { "@type": "Answer", "text": "For a 10×10 ft slab at 4 inches thick with a standard 1 : 2 : 4 mix and 10% waste: cement ≈ 329 kg (10 bags of 80 lb, or 7 bags of 50 kg), sand ≈ 16.1 cu ft (≈ 731 kg), aggregate ≈ 32.3 cu ft (≈ 1,325 kg), and roughly 164 liters of water." }
+      },
+      {
+        "@type": "Question",
+        "name": "What does a 1:2:4 concrete mix ratio mean?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It is the proportion of cement : sand : aggregate by volume. One part cement, two parts sand, four parts aggregate. 1 : 2 : 4 (grade M15) is the standard all-purpose mix for slabs and floors; 1 : 1.5 : 3 (M20) is stronger for structural work, while 1 : 3 : 6 and 1 : 4 : 8 are leaner mixes for light or non-structural jobs." }
+      },
+      {
+        "@type": "Question",
         "name": "Should I order ready-mix or bags?",
         "acceptedAnswer": { "@type": "Answer", "text": "As a rule of thumb, bags make sense under about half a cubic yard (roughly 20 eighty-pound bags). Above that, ready-mix is usually cheaper and far less labor." }
       }
@@ -108,8 +118,23 @@
       </div>
 
       <div class="form-field">
-        <label for="f-bag">Bag size</label>
-        <select id="f-bag" data-field="bag"><option value="80" selected>80 lb bag (≈ 0.6 cu ft)</option><option value="60">60 lb bag (≈ 0.45 cu ft)</option><option value="ready">Ready-mix (cubic yards only)</option></select>
+        <label for="f-mode">Material</label>
+        <select id="f-mode" data-field="mode"><option value="bags" selected>Pre-mix bags</option><option value="ready">Ready-mix (truck)</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-bagweight">Bag weight</label>
+        <input type="number" id="f-bagweight" data-field="bagWeight" inputmode="decimal" min="0" step="any" value="80">
+      </div>
+
+      <div class="form-field">
+        <label for="f-bagunit">Bag weight unit</label>
+        <select id="f-bagunit" data-field="bagUnit"><option value="lb" selected>lb (pounds)</option><option value="kg">kg (kilograms)</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-ratio">Mix ratio (cement : sand : aggregate)</label>
+        <select id="f-ratio" data-field="ratio"><option value="1:1.5:3">1 : 1.5 : 3 — M20, strong (structural, driveways)</option><option value="1:2:4" selected>1 : 2 : 4 — M15, standard (slabs, floors)</option><option value="1:3:6">1 : 3 : 6 — M10, light (patios, walkways)</option><option value="1:4:8">1 : 4 : 8 — M7.5, lean (blinding, fill)</option><option value="custom">Custom ratio</option></select>
       </div>
 
       <div class="form-field">
@@ -117,6 +142,23 @@
         <select id="f-waste" data-field="waste"><option value="0">0% — exact</option><option value="5">5%</option><option value="10" selected>10% — recommended</option><option value="15">15% — uneven ground</option></select>
       </div>
         </div>
+        <div class="form-row">
+      <div class="form-field">
+        <label for="f-cpart">Custom ratio — cement parts</label>
+        <input type="number" id="f-cpart" data-field="cPart" inputmode="decimal" min="0" step="any" value="1">
+      </div>
+
+      <div class="form-field">
+        <label for="f-spart">Custom ratio — sand parts</label>
+        <input type="number" id="f-spart" data-field="sPart" inputmode="decimal" min="0" step="any" value="2">
+      </div>
+
+      <div class="form-field">
+        <label for="f-apart">Custom ratio — aggregate parts</label>
+        <input type="number" id="f-apart" data-field="aPart" inputmode="decimal" min="0" step="any" value="4">
+      </div>
+        </div>
+        <p style="color:#5b6b82;font-size:.92em;margin:.2em 0 0">The three custom parts are only used when the mix ratio above is set to <strong>Custom ratio</strong>. Common bag weights: 80 or 60 lb pre-mix, 94 lb cement (US), 50 or 25 kg cement (metric).</p>
       </div>
       <div class="btn-row">
         <button type="button" id="calc-go">Calculate</button>
@@ -127,17 +169,21 @@
 
     <section class="prose" aria-labelledby="about-calc">
       <h2 id="about-calc">About this concrete calculator</h2>
-      <p>Ordering too little concrete stalls a pour; ordering too much wastes money. This calculator converts your slab, footing, or post-hole dimensions into the two numbers suppliers actually use: <strong>cubic yards</strong> for ready-mix trucks and <strong>bag counts</strong> for mix-it-yourself jobs with 60 lb or 80 lb bags.</p>
+      <p>Ordering too little concrete stalls a pour; ordering too much wastes money. This calculator converts your slab, footing, or post-hole dimensions into the numbers suppliers actually use: <strong>cubic yards</strong> for ready-mix trucks, <strong>bag counts</strong> for mix-it-yourself jobs (enter your bag weight in pounds or kilograms), and a full <strong>material quantity breakdown</strong> — cement, sand, aggregate and water — for site mixing at any standard mix ratio.</p>
       <p>The math is simple volume: length × width × thickness, converted to cubic feet and then cubic yards (27 cubic feet per yard). Bag counts use the yield printed on the bag — an 80 lb bag of concrete mix yields about 0.6 cubic feet, a 60 lb bag about 0.45 cubic feet. The calculator rounds bag counts <em>up</em>, because a half bag short is a ruined afternoon.</p>
       <p>Always add a waste allowance. Forms leak, subgrades are never perfectly level, and a slab that is half an inch thicker than planned across 100 square feet eats an extra 4 cubic feet of concrete. Ten percent is the standard recommendation for slabs; use 15% on uneven or hand-dug ground.</p>
       <h2>How to use</h2>
       <ol>
         <li>Measure the <strong>length and width</strong> of your slab or footing in feet.</li>
         <li>Enter the <strong>thickness in inches</strong> — 4 inches is standard for patios and walkways, 6 inches for driveways.</li>
-        <li>Choose <strong>bag size</strong> (or ready-mix if you are ordering a truck) and a <strong>waste allowance</strong>.</li>
-        <li>Press <strong>Calculate</strong>. For truck orders, call the plant with the cubic-yard figure.</li>
+        <li>Choose <strong>pre-mix bags or ready-mix</strong>. For bags, enter the <strong>bag weight</strong> and pick <strong>lb or kg</strong> — 80 and 60 lb are the common US pre-mix sizes, 94 lb is a US cement sack, 50 kg is the standard metric cement bag.</li>
+        <li>Pick a <strong>mix ratio</strong> (1 : 2 : 4 is the standard all-purpose mix) and a <strong>waste allowance</strong>.</li>
+        <li>Press <strong>Calculate</strong>. You get the volume, the pre-mix bag count, and the full material list — cement, sand, aggregate and water — if you are mixing on site.</li>
       </ol>
 
+      <h2>Mix ratios and material quantities</h2>
+      <p>Concrete is cement, sand and coarse aggregate (gravel) in a set proportion, written as cement : sand : aggregate. A <strong>1 : 2 : 4</strong> mix (grade M15) is the standard all-purpose choice for slabs, floors and paths. <strong>1 : 1.5 : 3</strong> (M20) is stronger, for structural work and driveways. <strong>1 : 3 : 6</strong> (M10) suits light, non-structural work, and <strong>1 : 4 : 8</strong> (M7.5) is a lean mix for blinding and bedding. You can also enter a custom ratio.</p>
+      <p>The material breakdown uses the standard <strong>dry-volume method</strong>: dry materials take about 1.54× the finished (wet) volume, each material takes its ratio share of that dry volume, and weights use typical densities — cement 1,440 kg/m³, sand 1,600 kg/m³, aggregate 1,450 kg/m³. Water is estimated at a 0.5 water-cement ratio. Treat the weights as close buying estimates: sand and aggregate moisture and grading shift them a little in practice.</p>
       <h2>Good to know</h2>
       <ul>
         <li>Bag yields vary slightly by brand and mix — check the yield printed on your specific bag.</li>
@@ -163,6 +209,14 @@
       <details>
         <summary>What is the formula for concrete volume?</summary>
         <p>Length (ft) × width (ft) × thickness (in ÷ 12) = cubic feet. Divide by 27 for cubic yards.</p>
+      </details>
+      <details>
+        <summary>How much cement, sand and aggregate do I need for a 10x10 slab?</summary>
+        <p>For a 10×10 ft slab at 4 inches thick with a standard 1 : 2 : 4 mix and 10% waste, the calculator gives: cement ≈ 329 kg (10 bags of 80 lb, or 7 bags of 50 kg), sand ≈ 16.1 cu ft (≈ 731 kg), aggregate ≈ 32.3 cu ft (≈ 1,325 kg), and roughly 164 liters of water. Pick a different ratio — or enter your slab size above — for your own numbers.</p>
+      </details>
+      <details>
+        <summary>What does a 1:2:4 concrete mix ratio mean?</summary>
+        <p>It is the proportion of cement : sand : aggregate by volume. One part cement, two parts sand, four parts aggregate. 1 : 2 : 4 (grade M15) is the standard all-purpose mix for slabs and floors; 1 : 1.5 : 3 (M20) is stronger for structural work, while 1 : 3 : 6 and 1 : 4 : 8 are leaner mixes for light or non-structural jobs.</p>
       </details>
       <details>
         <summary>Should I order ready-mix or bags?</summary>
