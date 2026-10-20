@@ -24,7 +24,7 @@
   function calc(v) {
     var L = pos(v.length, 'Deck length');
     var W = pos(v.width, 'Deck width');
-    var rate = num(v.rate, 'Cost per square foot');
+    var rate = pos(v.rate, 'Cost per square foot');
     var area = L * W;
     var mid = area * rate;
     return '<strong>Deck area:</strong> ' + round(area, 0) + ' sq ft' +

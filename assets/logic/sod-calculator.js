@@ -19,6 +19,8 @@
     var f = Math.pow(10, p);
     return Math.round(value * f) / f;
   }
+  // Ceil guarded against float dust (e.g. 1650.0000000000002 / 10 must give 165, not 166).
+  function ceilE(x) { return Math.ceil(x - 1e-9); }
 
 
   function calc(v) {
@@ -26,13 +28,16 @@
     var W = pos(v.width, 'Lawn width');
     var waste = num(v.waste, 'Waste allowance') / 100;
     if (waste < 0 || waste > 0.5) { throw new Error('Waste allowance must be between 0 and 50%.'); }
+    var rollSqft = (v.roll === undefined || v.roll === '') ? 10 : pos(v.roll, 'Roll coverage');
+    var palletSqft = (v.pallet === undefined || v.pallet === '') ? 450 : pos(v.pallet, 'Pallet coverage');
     var area = L * W;
     var areaWaste = area * (1 + waste);
-    var rolls = Math.ceil(areaWaste / 10);
-    var pallets = Math.ceil(areaWaste / 450);
+    var rolls = ceilE(areaWaste / rollSqft);
+    var pallets = ceilE(areaWaste / palletSqft);
     var out = '<strong>Sod rolls needed:</strong> ' + rolls +
       ' <span style="color:#5b6b82">(' + round(areaWaste, 0) + ' sq ft incl. ' + v.waste + '% waste)</span>' +
-      '<br><strong>Pallets:</strong> ' + pallets + ' <span style="color:#5b6b82">(~450 sq ft / 45 rolls per pallet)</span>' +
+      '<br><strong>Pallets:</strong> ' + pallets + ' <span style="color:#5b6b82">(~' + palletSqft + ' sq ft / ' +
+      round(palletSqft / rollSqft, 0) + ' rolls per pallet)</span>' +
       '<br><strong>Lawn area:</strong> ' + round(area, 0) + ' sq ft';
     if (v.price !== '') {
       var p = num(v.price, 'Price per roll');

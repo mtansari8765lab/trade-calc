@@ -25,7 +25,7 @@
     var sqft = pos(v.sqft, 'Wall area');
     var coats = num(v.coats, 'Coats');
     var coverage = v.coverage === '' ? 350 : pos(v.coverage, 'Coverage per gallon');
-    var gallons = Math.ceil((sqft * coats) / coverage);
+    var gallons = Math.ceil((sqft * coats) / coverage - 1e-9);
     var quarts = gallons * 4;
     return '<strong>Paint needed:</strong> ' + gallons + ' gallon' + (gallons === 1 ? '' : 's') +
       ' <span style="color:#5b6b82">(' + quarts + ' quarts)</span>' +

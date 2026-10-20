@@ -126,6 +126,14 @@
         <label for="f-depth">Depth (in)</label>
         <input type="number" id="f-depth" data-field="depth" inputmode="decimal" min="0" step="any" placeholder="e.g. 3">
       </div>
+      <div class="form-field">
+        <label for="f-waste">Waste / settling allowance</label>
+        <select id="f-waste" data-field="waste"><option value="0" selected>0% — exact</option><option value="10">10% — settling</option><option value="20">20% — settling + uneven beds</option></select>
+      </div>
+      <div class="form-field">
+        <label for="f-bagsize">Bag size (cu ft)</label>
+        <select id="f-bagsize" data-field="bagsize"><option value="1.5">1.5 cu ft</option><option value="2" selected>2 cu ft — standard</option><option value="3">3 cu ft</option></select>
+      </div>
         </div>
       </div>
       <div class="btn-row">

@@ -19,21 +19,29 @@
     var f = Math.pow(10, p);
     return Math.round(value * f) / f;
   }
+  // Ceil guarded against float dust.
+  function ceilE(x) { return Math.ceil(x - 1e-9); }
 
 
   function calc(v) {
     var L = pos(v.length, 'Bed length');
     var W = pos(v.width, 'Bed width');
     var D = pos(v.depth, 'Depth');
-    var volFt3 = L * W * (D / 12);
+    var waste = (v.waste === undefined || v.waste === '') ? 0 : num(v.waste, 'Waste allowance') / 100;
+    if (waste < 0 || waste > 0.5) { throw new Error('Waste allowance must be between 0 and 50%.'); }
+    var bagSize = (v.bagsize === undefined || v.bagsize === '') ? 2 : pos(v.bagsize, 'Bag size');
+    var volFt3 = L * W * (D / 12) * (1 + waste);
     var yd3 = volFt3 / 27;
-    var bags = Math.ceil(volFt3 / 2);
+    var bags = ceilE(volFt3 / bagSize);
+    /* A bulk (builder's) bag holds about 1 cubic yard. */
+    var bulkBags = Math.max(1, ceilE(yd3));
     return '<strong>Bulk mulch:</strong> ' + round(yd3, 2) + ' cubic yards' +
-      ' <span style="color:#5b6b82">(' + round(volFt3, 1) + ' cu ft)</span>' +
-      '<br><strong>Bags (2 cu ft):</strong> ' + bags + ' bags' +
+      ' <span style="color:#5b6b82">(' + round(volFt3, 1) + ' cu ft \u00b7 ' + round(volFt3 * 0.0283168, 2) + ' m\u00b3' +
+      (waste > 0 ? ', includes ' + v.waste + '% waste/settling' : '') + ')</span>' +
+      '<br><strong>Bags (' + bagSize + ' cu ft):</strong> ' + bags + ' bags' +
       '<br><span style="color:#5b6b82">Rule of thumb: 1 cubic yard covers ~100 sq ft at 3 inches deep. ' +
-      'Bulk is far cheaper above ~2 yards \u2014 ' + round(yd3, 2) + ' yd\u00b3 \u00f7 2 = ' +
-      'about ' + Math.ceil(yd3 / 2) + ' bulk-bag equivalents.</span>';
+      'Bulk is far cheaper above ~2 yards \u2014 1 bulk bag holds about 1 cubic yard, so this is roughly ' +
+      bulkBags + ' bulk bag' + (bulkBags === 1 ? '' : 's') + '.</span>';
   }
 
   var api = { calc: calc };

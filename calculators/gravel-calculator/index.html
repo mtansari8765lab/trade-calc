@@ -126,6 +126,14 @@
         <label for="f-depth">Depth (in)</label>
         <input type="number" id="f-depth" data-field="depth" inputmode="decimal" min="0" step="any" placeholder="e.g. 4">
       </div>
+      <div class="form-field">
+        <label for="f-density">Material</label>
+        <select id="f-density" data-field="density"><option value="1.3">Sand (~1.3 tons/yd³)</option><option value="1.4" selected>Gravel / crushed stone (~1.4 tons/yd³)</option><option value="1.5">Dense crusher run (~1.5 tons/yd³)</option></select>
+      </div>
+      <div class="form-field">
+        <label for="f-waste">Waste / compaction allowance</label>
+        <select id="f-waste" data-field="waste"><option value="0">0% — exact</option><option value="5">5%</option><option value="10" selected>10% — recommended</option><option value="15">15%</option></select>
+      </div>
         </div>
       </div>
       <div class="btn-row">

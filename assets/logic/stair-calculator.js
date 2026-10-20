@@ -31,7 +31,7 @@
     var treads = risers - 1;
     var run = treads * tread;
     var stringer = Math.sqrt(rise * rise + run * run);
-    var angle = Math.atan(rise / (run === 0 ? 1 : run)) * 180 / Math.PI;
+    var angle = Math.atan(actual / tread) * 180 / Math.PI;
     var out = '<strong>Risers:</strong> ' + risers +
       ' <span style="color:#5b6b82">at ' + round(actual, 2) + ' in each</span>' +
       '<br><strong>Treads:</strong> ' + treads +
@@ -40,9 +40,12 @@
       '<br><strong>Stair angle:</strong> ' + round(angle, 1) + '\u00b0';
     var notes = [];
     if (actual > 7.75) { notes.push('Actual riser height exceeds the 7 3/4 in residential code maximum \u2014 add another riser.'); }
+    if (actual < 4) { notes.push('Actual riser height is below the 4 in minimum used by most codes \u2014 remove a riser.'); }
     if (tread < 10) { notes.push('Tread depth is below the 10 in residential code minimum \u2014 deepen the treads.'); }
     if (risers >= 4) { notes.push('4+ risers need a handrail at 34\u201338 in above the nosing line in most codes.'); }
     if (angle < 30 || angle > 40) { notes.push('Stair angles of 30\u201340\u00b0 feel most comfortable; adjust riser/run to land in that zone.'); }
+    var rtSum = actual + tread;
+    if (rtSum < 17 || rtSum > 18) { notes.push('Riser + tread = ' + round(rtSum, 1) + ' in \u2014 the classic comfort rule of thumb is 17\u201318 in combined.'); }
     if (notes.length) {
       out += '<br><br><strong>Code & comfort notes:</strong><br><span style="color:#a3541e">' +
         notes.join('<br>') + '</span>';

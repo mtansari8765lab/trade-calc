@@ -103,8 +103,16 @@
       </div>
 
       <div class="form-field">
-        <label for="f-size">Tile size</label>
-        <select id="f-size" data-field="size"><option value="12" selected>12 × 12 in</option><option value="18">18 × 18 in</option><option value="24">24 × 24 in</option><option value="6">6 × 6 in</option></select>
+        <label for="f-tlength">Tile length (in)</label>
+        <input type="number" id="f-tlength" data-field="tlength" inputmode="decimal" min="0" step="any" value="12">
+      </div>
+      <div class="form-field">
+        <label for="f-twidth">Tile width (in)</label>
+        <input type="number" id="f-twidth" data-field="twidth" inputmode="decimal" min="0" step="any" value="12">
+      </div>
+      <div class="form-field">
+        <label for="f-perbox">Tiles per box (optional)</label>
+        <input type="number" id="f-perbox" data-field="perbox" inputmode="decimal" min="0" step="any" placeholder="e.g. 10">
       </div>
 
       <div class="form-field">
@@ -135,7 +143,7 @@
 
       <h2>Good to know</h2>
       <ul>
-        <li>Rectangular tiles (e.g. 12×24) and mosaics need manual layout — this calculator assumes square tiles.</li>
+        <li>Rectangular tiles (e.g. 12×24) are supported — enter tile length and width. Mosaics and complex patterns still need manual layout planning.</li>
         <li>Grout, thinset, backer board, and underlayment are separate materials — budget them from the same square footage.</li>
         <li>Does not account for pattern matching or centering layouts, which can add waste.</li>
       </ul>

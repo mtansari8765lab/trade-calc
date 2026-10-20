@@ -36,7 +36,7 @@
       {
         "@type": "Question",
         "name": "How many shingles do I need for a 20x30 roof?",
-        "acceptedAnswer": { "@type": "Answer", "text": "A 20×30 ft roof footprint is 600 sq ft; with a 6/12 pitch that is about 671 sq ft of roof surface, or 6.7 squares — roughly 21 bundles with 10% waste. Enter your exact pitch above for your number." }
+        "acceptedAnswer": { "@type": "Answer", "text": "A 20×30 ft roof footprint is 600 sq ft; with a 6/12 pitch that is about 671 sq ft of roof surface, or 6.7 squares before waste — roughly 23 bundles once 10% waste is added. Enter your exact pitch above for your number." }
       },
       {
         "@type": "Question",
@@ -104,9 +104,13 @@
 
       <div class="form-field">
         <label for="f-pitch">Roof pitch</label>
-        <select id="f-pitch" data-field="pitch"><option value="1.0">Flat / low slope (up to 3/12)</option><option value="1.054">4/12 pitch</option><option value="1.118" selected>6/12 pitch — common</option><option value="1.202">8/12 pitch</option><option value="1.302">10/12 pitch</option><option value="1.414">12/12 pitch — steep</option></select>
+        <select id="f-pitch" data-field="pitch"><option value="1.031">Low slope (up to 3/12)</option><option value="1.054">4/12 pitch</option><option value="1.118" selected>6/12 pitch — common</option><option value="1.202">8/12 pitch</option><option value="1.302">10/12 pitch</option><option value="1.414">12/12 pitch — steep</option></select>
       </div>
 
+      <div class="form-field">
+        <label for="f-persq">Bundles per square</label>
+        <select id="f-persq" data-field="persq"><option value="3" selected>3 — most shingles</option><option value="4">4 — heavy architectural</option></select>
+      </div>
       <div class="form-field">
         <label for="f-waste">Waste allowance</label>
         <select id="f-waste" data-field="waste"><option value="10" selected>10% — simple roof</option><option value="15">15% — hips, valleys, dormers</option></select>
@@ -146,7 +150,7 @@
       <h2 id="calc-faq">Frequently asked questions</h2>
       <details>
         <summary>How many shingles do I need for a 20x30 roof?</summary>
-        <p>A 20×30 ft roof footprint is 600 sq ft; with a 6/12 pitch that is about 671 sq ft of roof surface, or 6.7 squares — roughly 21 bundles with 10% waste. Enter your exact pitch above for your number.</p>
+        <p>A 20×30 ft roof footprint is 600 sq ft; with a 6/12 pitch that is about 671 sq ft of roof surface, or 6.7 squares before waste — roughly 23 bundles once 10% waste is added. Enter your exact pitch above for your number.</p>
       </details>
       <details>
         <summary>What is a roofing square?</summary>

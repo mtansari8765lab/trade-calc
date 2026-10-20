@@ -26,12 +26,16 @@
     var W = pos(v.width, 'Slab width');
     var T = pos(v.thickness, 'Thickness');
     var price = v.price === '' ? 150 : pos(v.price, 'Price per cubic yard');
+    var waste = (v.waste === undefined || v.waste === '') ? 0 : num(v.waste, 'Waste allowance') / 100;
+    if (waste < 0 || waste > 0.5) { throw new Error('Waste allowance must be between 0 and 50%.'); }
     var yd3 = (L * W * (T / 12)) / 27;
-    var materials = yd3 * price;
+    var orderYd3 = yd3 * (1 + waste);
+    var materials = orderYd3 * price;
     var low = materials * 1.4, high = materials * 2.2;
     return '<strong>Concrete needed:</strong> ' + round(yd3, 2) + ' cubic yards' +
+      (waste > 0 ? ' <span style="color:#5b6b82">(order ' + round(orderYd3, 2) + ' yd\u00b3 with ' + v.waste + '% waste)</span>' : '') +
       '<br><strong>Materials estimate:</strong> $' + round(materials, 0) +
-      ' <span style="color:#5b6b82">(' + round(yd3, 2) + ' yd\u00b3 \u00d7 $' + price + '/yd\u00b3)</span>' +
+      ' <span style="color:#5b6b82">(' + round(orderYd3, 2) + ' yd\u00b3 \u00d7 $' + price + '/yd\u00b3)</span>' +
       '<br><strong>Typical all-in range (materials + labor):</strong> $' + round(low, 0) + ' \u2013 $' + round(high, 0) +
       '<br><span style="color:#5b6b82">Planning estimate based on typical 2026 US pricing. Labor, forming, rebar, and finishing vary widely \u2014 get 3 local quotes before budgeting.</span>';
   }
