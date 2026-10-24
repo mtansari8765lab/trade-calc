@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concrete Block Calculator — How Many Blocks Do I Need?</title>
+  <meta name="description" content="Free concrete block calculator: enter wall dimensions to get the number of CMU blocks and mortar bags needed, with a waste allowance.">
+  <link rel="canonical" href="https://mtansari8765lab.github.io/trade-calc/calculators/concrete-block-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TradeCalc">
+  <meta property="og:title" content="Concrete Block Calculator — How Many Blocks Do I Need?">
+  <meta property="og:description" content="Free concrete block calculator: enter wall dimensions to get the number of CMU blocks and mortar bags needed, with a waste allowance.">
+  <meta property="og:url" content="https://mtansari8765lab.github.io/trade-calc/calculators/concrete-block-calculator/">
+  <meta property="og:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Concrete Block Calculator — How Many Blocks Do I Need?">
+  <meta name="twitter:description" content="Free concrete block calculator: enter wall dimensions to get the number of CMU blocks and mortar bags needed, with a waste allowance.">
+  <meta name="twitter:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <link rel="stylesheet" href="../../assets/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-39XP28RSP9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'analytics_storage': 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-39XP28RSP9');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8008490095120298"
+     crossorigin="anonymous"></script>
+</head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many concrete blocks do I need for a 10x8 wall?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A 10×8 ft wall is 80 sq ft × 1.125 blocks per sq ft = 90 blocks exact — order 99 with a 10% waste allowance, plus 3 bags of mortar." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many blocks per square foot?",
+        "acceptedAnswer": { "@type": "Answer", "text": "1.125 standard 8×8×16-inch blocks per square foot of wall (face area plus mortar joint). Jumbo 8×8×24-inch blocks run 0.75 per square foot." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much mortar do I need for concrete blocks?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Roughly one 80-lb bag of mortar per 35 blocks. A 99-block wall needs about 3 bags." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need half blocks?",
+        "acceptedAnswer": { "@type": "Answer", "text": "For running bond patterns, yes — but they are cut from full blocks on site, not ordered separately. Your waste allowance covers the cutting." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I build a structural block wall with this calculator?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The count works, but structural design does not come from a calculator: reinforcement, grout fill, and footings for foundation or retaining walls need an engineer and must meet local code." }
+      }
+    ]
+  }
+  </script>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="TradeCalc home">
+        <span class="brand-name">TradeCalc</span>
+        <span class="brand-tag">Free calculators for DIYers, homeowners &amp; pros.</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a> › <a href="../../calculators/index.html">Calculators</a> › <span aria-current="page">Concrete Block Calculator</span>
+    </nav>
+
+    <h1>Concrete Block Calculator</h1>
+    <p><strong>Standard 8×16-inch block faces cover just under a square foot each, so block math is nearly one block per square foot — plus waste and mortar. Runs 100% in your browser.</strong></p>
+
+    <section class="tool-box" aria-labelledby="calc-h">
+      <h2 id="calc-h" style="margin-top:0">Concrete Block Calculator</h2>
+      <div id="calc-form">
+        <div class="form-row">
+      <div class="form-field">
+        <label for="f-length">Wall length (ft)</label>
+        <input type="number" id="f-length" data-field="length" inputmode="decimal" min="0" step="any" placeholder="e.g. 10">
+      </div>
+
+      <div class="form-field">
+        <label for="f-height">Wall height (ft)</label>
+        <input type="number" id="f-height" data-field="height" inputmode="decimal" min="0" step="any" placeholder="e.g. 8">
+      </div>
+
+      <div class="form-field">
+        <label for="f-size">Block size (face)</label>
+        <select id="f-size" data-field="size"><option value="1.125" selected>8×8×16 in standard (1.125 per sq ft)</option><option value="0.75">8×8×24 in jumbo (0.75 per sq ft)</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-waste">Waste allowance</label>
+        <select id="f-waste" data-field="waste"><option value="5">5% — straight wall</option><option value="10" selected>10% — recommended</option><option value="15">15% — corners/openings</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-price">Price per block (optional) ($)</label>
+        <input type="number" id="f-price" data-field="price" inputmode="decimal" min="0" step="any" placeholder="e.g. 2.50">
+      </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="calc-go">Calculate</button>
+      </div>
+      <div class="error" id="calc-err" style="display:none" role="alert"></div>
+      <div class="result" id="calc-out" aria-live="polite">Enter your measurements and press Calculate.</div>
+    </section>
+
+    <section class="prose" aria-labelledby="about-calc">
+      <h2 id="about-calc">About this concrete block calculator</h2>
+      <p>Concrete masonry units (CMU, usually just called concrete blocks) are sized so the math stays simple: a standard 8×8×16-inch block has a face of 128 square inches, and once the 3/8-inch mortar joint is counted in the nominal size, it works out to <strong>1.125 blocks per square foot</strong> of wall. Multiply wall area by 1.125, add waste, and you have the order.</p>
+      <p>Waste covers cut blocks at corners, ends, and around openings — plus the occasional block that cracks when you look at it wrong. Ten percent is the standard allowance; use 15% for walls with many corners or openings, and remember that half-blocks for running bond are cut from full blocks, not bought separately.</p>
+      <p>Mortar runs roughly one 80-lb bag per 35 blocks for standard blockwork. That covers bed and head joints at normal thickness; thicker joints or sloppy blockwork drink more. If your wall is structural — foundation, retaining, or load-bearing — the block count is the easy part: reinforcement, grout fill, and footing design need engineering, and this calculator does not do that.</p>
+      <h2>How to use</h2>
+      <ol>
+        <li>Measure your <strong>wall length and height</strong> in feet.</li>
+        <li>Choose your <strong>block size</strong> (standard 8×8×16 in is the default).</li>
+        <li>Pick a <strong>waste allowance</strong> — 10% for straight walls, 15% for corners and openings.</li>
+        <li>Optionally enter the <strong>price per block</strong>, then press <strong>Calculate</strong>.</li>
+      </ol>
+
+      <h2>Good to know</h2>
+      <ul>
+        <li>Counts full blocks only — half-blocks for bond patterns are cut from full blocks on site.</li>
+        <li>Mortar estimate (~35 blocks per 80-lb bag) is a planning figure; joint thickness and block absorption vary it.</li>
+        <li>Structural walls (foundations, retaining walls, load-bearing) need engineering for reinforcement and grout — this is a quantity tool only.</li>
+      </ul>
+    </section>
+
+    <section class="prose faq" aria-labelledby="calc-faq">
+      <h2 id="calc-faq">Frequently asked questions</h2>
+      <details>
+        <summary>How many concrete blocks do I need for a 10x8 wall?</summary>
+        <p>A 10×8 ft wall is 80 sq ft × 1.125 blocks per sq ft = 90 blocks exact — order 99 with a 10% waste allowance, plus 3 bags of mortar.</p>
+      </details>
+      <details>
+        <summary>How many blocks per square foot?</summary>
+        <p>1.125 standard 8×8×16-inch blocks per square foot of wall (face area plus mortar joint). Jumbo 8×8×24-inch blocks run 0.75 per square foot.</p>
+      </details>
+      <details>
+        <summary>How much mortar do I need for concrete blocks?</summary>
+        <p>Roughly one 80-lb bag of mortar per 35 blocks. A 99-block wall needs about 3 bags.</p>
+      </details>
+      <details>
+        <summary>Do I need half blocks?</summary>
+        <p>For running bond patterns, yes — but they are cut from full blocks on site, not ordered separately. Your waste allowance covers the cutting.</p>
+      </details>
+      <details>
+        <summary>Can I build a structural block wall with this calculator?</summary>
+        <p>The count works, but structural design does not come from a calculator: reinforcement, grout fill, and footings for foundation or retaining walls need an engineer and must meet local code.</p>
+      </details>
+    </section>
+
+    <section class="related-tools" aria-labelledby="related">
+      <h2 id="related">Related calculators</h2>
+      <div class="tool-grid">
+        <a class="tool-card" href="../brick-calculator/index.html"><h3>Brick Calculator</h3><p>Bricks & mortar bags for single or double-wythe walls.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../concrete-calculator/index.html"><h3>Concrete Calculator</h3><p>Bags of concrete & cubic yards for slabs, footings & posts.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../rebar-calculator/index.html"><h3>Rebar Calculator</h3><p>Rebar bars, weight & sticks for concrete slabs.</p><span class="card-cta">Open calculator →</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy</a></li>
+          <li><a href="../../terms.html">Terms</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">© <span id="year">2026</span> TradeCalc. Free calculators for DIYers, homeowners &amp; pros.</p>
+    </div>
+  </footer>
+    <script src="../../assets/logic/concrete-block-calculator.js"></script>
+
+  <script>
+    (function () {
+      var T = window.TradeCalc;
+      document.getElementById('calc-go').addEventListener('click', function () {
+        var vals = {};
+        var inputs = document.querySelectorAll('#calc-form [data-field]');
+        var err = document.getElementById('calc-err');
+        var out = document.getElementById('calc-out');
+        Array.prototype.forEach.call(inputs, function (el) {
+          vals[el.getAttribute('data-field')] = el.value;
+        });
+        try {
+          out.innerHTML = T['block'](vals);
+          T.hideError(err);
+        } catch (e) {
+          T.showError(err, e.message);
+        }
+      });
+    })();
+  </script>
+
+  <script src="../../assets/main.js"></script>
+
+<div id="tc-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1f2937;color:#f9fafb;padding:14px 18px;font-size:14px;line-height:1.5;box-shadow:0 -2px 12px rgba(0,0,0,.25);font-family:system-ui,-apple-system,sans-serif;">
+  <span>We use cookies for anonymous analytics (Google Analytics) to see which pages are popular. No personal data is collected. <a href="https://mtansari8765lab.github.io/trade-calc/privacy.html" style="color:#93c5fd;text-decoration:underline;">Privacy policy</a></span>
+  <span style="display:inline-block;margin-left:12px;white-space:nowrap;margin-top:8px;">
+    <button id="tc-consent-accept" style="background:#2563eb;color:#fff;border:0;border-radius:6px;padding:8px 16px;margin-right:8px;cursor:pointer;font-size:14px;">Accept</button>
+    <button id="tc-consent-decline" style="background:transparent;color:#e5e7eb;border:1px solid #6b7280;border-radius:6px;padding:8px 16px;cursor:pointer;font-size:14px;">Decline</button>
+  </span>
+</div>
+<script>
+(function(){
+  var KEY='tc-consent-choice', banner=document.getElementById('tc-consent');
+  function apply(choice){
+    if(window.gtag){try{gtag('consent','update',{'analytics_storage':choice});}catch(e){}}
+    try{localStorage.setItem(KEY,choice);}catch(e){}
+    banner.hidden=true;
+  }
+  var saved=null;
+  try{saved=localStorage.getItem(KEY);}catch(e){}
+  if(saved==='granted'||saved==='denied'){ if(window.gtag){try{gtag('consent','update',{'analytics_storage':saved});}catch(e){}} }
+  else { banner.hidden=false; }
+  document.getElementById('tc-consent-accept').addEventListener('click',function(){apply('granted');});
+  document.getElementById('tc-consent-decline').addEventListener('click',function(){apply('denied');});
+})();
+</script>
+
+</body>
+</html>

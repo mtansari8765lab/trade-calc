@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wall Stud Calculator — How Many Studs Do I Need?</title>
+  <meta name="description" content="Free wall stud calculator: enter wall length, spacing, and openings to get stud count, plate lumber, and a buy list with waste allowance.">
+  <link rel="canonical" href="https://mtansari8765lab.github.io/trade-calc/calculators/wall-stud-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TradeCalc">
+  <meta property="og:title" content="Wall Stud Calculator — How Many Studs Do I Need?">
+  <meta property="og:description" content="Free wall stud calculator: enter wall length, spacing, and openings to get stud count, plate lumber, and a buy list with waste allowance.">
+  <meta property="og:url" content="https://mtansari8765lab.github.io/trade-calc/calculators/wall-stud-calculator/">
+  <meta property="og:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wall Stud Calculator — How Many Studs Do I Need?">
+  <meta name="twitter:description" content="Free wall stud calculator: enter wall length, spacing, and openings to get stud count, plate lumber, and a buy list with waste allowance.">
+  <meta name="twitter:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <link rel="stylesheet" href="../../assets/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-39XP28RSP9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'analytics_storage': 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-39XP28RSP9');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8008490095120298"
+     crossorigin="anonymous"></script>
+</head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many studs do I need for a 10-foot wall?",
+        "acceptedAnswer": { "@type": "Answer", "text": "At 16-inch spacing: 9 field studs (120 ÷ 16 = 7.5, rounded up to 8 spaces, plus 1 end stud) — buy 10 with 10% waste. Plates add 30 linear feet (double top + sole)." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is standard stud spacing?",
+        "acceptedAnswer": { "@type": "Answer", "text": "16 inches on center is standard for load-bearing walls and gives the best drywall support. 24 inches on center is common for non-load-bearing partitions; 12 inches is for heavy loads and tile walls." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many studs per opening?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Plan on 4 extra studs per door or window opening: 2 king studs (full height, outside) and 2 jack studs (under the header). Headers and cripples are additional." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much plate lumber does a wall need?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Three times the wall length in linear feet: a double top plate plus a sole plate, all in the same stud lumber (usually 2×4)." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many studs do I need for a 12-foot wall?",
+        "acceptedAnswer": { "@type": "Answer", "text": "At 16-inch spacing: 10 field studs (144 ÷ 16 = 9 spaces + 1 end stud) — buy 11 with 10% waste, plus 36 linear feet of plate lumber." }
+      }
+    ]
+  }
+  </script>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="TradeCalc home">
+        <span class="brand-name">TradeCalc</span>
+        <span class="brand-tag">Free calculators for DIYers, homeowners &amp; pros.</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a> › <a href="../../calculators/index.html">Calculators</a> › <span aria-current="page">Wall Stud Calculator</span>
+    </nav>
+
+    <h1>Wall Stud Calculator</h1>
+    <p><strong>Frame a wall without a second lumber run: studs from length and spacing, plate lumber, and extra studs for every door and window opening. Runs 100% in your browser.</strong></p>
+
+    <section class="tool-box" aria-labelledby="calc-h">
+      <h2 id="calc-h" style="margin-top:0">Wall Stud Calculator</h2>
+      <div id="calc-form">
+        <div class="form-row">
+      <div class="form-field">
+        <label for="f-length">Wall length (ft)</label>
+        <input type="number" id="f-length" data-field="length" inputmode="decimal" min="0" step="any" placeholder="e.g. 10">
+      </div>
+
+      <div class="form-field">
+        <label for="f-spacing">Stud spacing on center</label>
+        <select id="f-spacing" data-field="spacing"><option value="12">12 in — heavy loads</option><option value="16" selected>16 in — standard</option><option value="24">24 in — non-load-bearing</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-openings">Door/window openings</label>
+        <input type="number" id="f-openings" data-field="openings" inputmode="decimal" min="0" step="any" placeholder="e.g. 2">
+      </div>
+
+      <div class="form-field">
+        <label for="f-waste">Waste allowance</label>
+        <select id="f-waste" data-field="waste"><option value="0">0% — exact</option><option value="10" selected>10% — recommended</option><option value="15">15% — cuts/corners</option></select>
+      </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="calc-go">Calculate</button>
+      </div>
+      <div class="error" id="calc-err" style="display:none" role="alert"></div>
+      <div class="result" id="calc-out" aria-live="polite">Enter your measurements and press Calculate.</div>
+    </section>
+
+    <section class="prose" aria-labelledby="about-calc">
+      <h2 id="about-calc">About this wall stud calculator</h2>
+      <p>Wall framing has three lumber lines: <strong>field studs</strong> (the verticals, spaced on center), <strong>plates</strong> (the horizontal top and bottom), and <strong>opening studs</strong> (the king and jack studs framing each door and window). This calculator does all three from wall length and spacing — plus a waste allowance, because studs get cut, split, and rejected for crown. Our <a href="../../guides/how-many-studs-do-i-need/index.html">stud guide</a> covers spacing choices, headers, and corners in more depth.</p>
+      <p>The field-stud formula is one division: wall length in inches divided by spacing, rounded up, plus one end stud. A 10-ft wall at 16 inches on center is 120 ÷ 16 = 7.5 → 8 spaces + 1 = <strong>9 studs</strong>; with 10% waste, buy 10. Sixteen-inch spacing is the standard for load-bearing walls; 24-inch spacing suits many non-load-bearing partitions and uses roughly 25% less lumber — but check local code before using it on a bearing wall.</p>
+      <p>Plates are easy to forget and annoying to run short on: a wall needs a <strong>double top plate</strong> plus a <strong>sole (bottom) plate</strong>, which is 3× the wall length in linear feet of the same stud lumber. Openings each add about 4 studs (2 king studs full-height beside the opening, 2 jack studs supporting the header) — headers themselves, cripples, and corner assemblies are extra beyond this count.</p>
+      <h2>How to use</h2>
+      <ol>
+        <li>Measure your <strong>wall length</strong> in feet.</li>
+        <li>Choose your <strong>stud spacing</strong> — 16 in on center is standard for load-bearing walls.</li>
+        <li>Enter the number of <strong>door and window openings</strong> (0 if none).</li>
+        <li>Pick a <strong>waste allowance</strong> and press <strong>Calculate</strong>.</li>
+      </ol>
+
+      <h2>Good to know</h2>
+      <ul>
+        <li>Straight walls only — corners, intersections, and T-walls need extra studs for nailing surfaces that this tool does not count.</li>
+        <li>Headers, cripples above/below openings, and blocking are not counted — size headers per span and load per local code.</li>
+        <li>Stud length (wall height) is not an input — buy studs cut to your wall height (typically 8-ft precut studs for 8-ft ceilings).</li>
+      </ul>
+    </section>
+
+    <section class="prose faq" aria-labelledby="calc-faq">
+      <h2 id="calc-faq">Frequently asked questions</h2>
+      <details>
+        <summary>How many studs do I need for a 10-foot wall?</summary>
+        <p>At 16-inch spacing: 9 field studs (120 ÷ 16 = 7.5, rounded up to 8 spaces, plus 1 end stud) — buy 10 with 10% waste. Plates add 30 linear feet (double top + sole).</p>
+      </details>
+      <details>
+        <summary>What is standard stud spacing?</summary>
+        <p>16 inches on center is standard for load-bearing walls and gives the best drywall support. 24 inches on center is common for non-load-bearing partitions; 12 inches is for heavy loads and tile walls.</p>
+      </details>
+      <details>
+        <summary>How many studs per opening?</summary>
+        <p>Plan on 4 extra studs per door or window opening: 2 king studs (full height, outside) and 2 jack studs (under the header). Headers and cripples are additional.</p>
+      </details>
+      <details>
+        <summary>How much plate lumber does a wall need?</summary>
+        <p>Three times the wall length in linear feet: a double top plate plus a sole plate, all in the same stud lumber (usually 2×4).</p>
+      </details>
+      <details>
+        <summary>How many studs do I need for a 12-foot wall?</summary>
+        <p>At 16-inch spacing: 10 field studs (144 ÷ 16 = 9 spaces + 1 end stud) — buy 11 with 10% waste, plus 36 linear feet of plate lumber.</p>
+      </details>
+    </section>
+
+    <section class="related-tools" aria-labelledby="related">
+      <h2 id="related">Related calculators</h2>
+      <div class="tool-grid">
+        <a class="tool-card" href="../drywall-calculator/index.html"><h3>Drywall Calculator</h3><p>Drywall sheets for any wall area, with waste.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../board-foot-calculator/index.html"><h3>Board Foot Calculator</h3><p>Lumber volume in board feet + total cost.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../deck-board-calculator/index.html"><h3>Deck Board Calculator</h3><p>Decking boards for any deck size.</p><span class="card-cta">Open calculator →</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy</a></li>
+          <li><a href="../../terms.html">Terms</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">© <span id="year">2026</span> TradeCalc. Free calculators for DIYers, homeowners &amp; pros.</p>
+    </div>
+  </footer>
+    <script src="../../assets/logic/wall-stud-calculator.js"></script>
+
+  <script>
+    (function () {
+      var T = window.TradeCalc;
+      document.getElementById('calc-go').addEventListener('click', function () {
+        var vals = {};
+        var inputs = document.querySelectorAll('#calc-form [data-field]');
+        var err = document.getElementById('calc-err');
+        var out = document.getElementById('calc-out');
+        Array.prototype.forEach.call(inputs, function (el) {
+          vals[el.getAttribute('data-field')] = el.value;
+        });
+        try {
+          out.innerHTML = T['stud'](vals);
+          T.hideError(err);
+        } catch (e) {
+          T.showError(err, e.message);
+        }
+      });
+    })();
+  </script>
+
+  <script src="../../assets/main.js"></script>
+
+<div id="tc-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1f2937;color:#f9fafb;padding:14px 18px;font-size:14px;line-height:1.5;box-shadow:0 -2px 12px rgba(0,0,0,.25);font-family:system-ui,-apple-system,sans-serif;">
+  <span>We use cookies for anonymous analytics (Google Analytics) to see which pages are popular. No personal data is collected. <a href="https://mtansari8765lab.github.io/trade-calc/privacy.html" style="color:#93c5fd;text-decoration:underline;">Privacy policy</a></span>
+  <span style="display:inline-block;margin-left:12px;white-space:nowrap;margin-top:8px;">
+    <button id="tc-consent-accept" style="background:#2563eb;color:#fff;border:0;border-radius:6px;padding:8px 16px;margin-right:8px;cursor:pointer;font-size:14px;">Accept</button>
+    <button id="tc-consent-decline" style="background:transparent;color:#e5e7eb;border:1px solid #6b7280;border-radius:6px;padding:8px 16px;cursor:pointer;font-size:14px;">Decline</button>
+  </span>
+</div>
+<script>
+(function(){
+  var KEY='tc-consent-choice', banner=document.getElementById('tc-consent');
+  function apply(choice){
+    if(window.gtag){try{gtag('consent','update',{'analytics_storage':choice});}catch(e){}}
+    try{localStorage.setItem(KEY,choice);}catch(e){}
+    banner.hidden=true;
+  }
+  var saved=null;
+  try{saved=localStorage.getItem(KEY);}catch(e){}
+  if(saved==='granted'||saved==='denied'){ if(window.gtag){try{gtag('consent','update',{'analytics_storage':saved});}catch(e){}} }
+  else { banner.hidden=false; }
+  document.getElementById('tc-consent-accept').addEventListener('click',function(){apply('granted');});
+  document.getElementById('tc-consent-decline').addEventListener('click',function(){apply('denied');});
+})();
+</script>
+
+</body>
+</html>
