@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siding Calculator — How Many Squares Do I Need?</title>
+  <meta name="description" content="Free siding calculator: enter total wall length, height, gables, and openings to get net wall area, squares of siding, and order quantity with waste.">
+  <link rel="canonical" href="https://mtansari8765lab.github.io/trade-calc/calculators/siding-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TradeCalc">
+  <meta property="og:title" content="Siding Calculator — How Many Squares Do I Need?">
+  <meta property="og:description" content="Free siding calculator: enter total wall length, height, gables, and openings to get net wall area, squares of siding, and order quantity with waste.">
+  <meta property="og:url" content="https://mtansari8765lab.github.io/trade-calc/calculators/siding-calculator/">
+  <meta property="og:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Siding Calculator — How Many Squares Do I Need?">
+  <meta name="twitter:description" content="Free siding calculator: enter total wall length, height, gables, and openings to get net wall area, squares of siding, and order quantity with waste.">
+  <meta name="twitter:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <link rel="stylesheet" href="../../assets/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-39XP28RSP9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'analytics_storage': 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-39XP28RSP9');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8008490095120298"
+     crossorigin="anonymous"></script>
+</head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much siding do I need for a 1,500 sq ft house?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A 1,500 sq ft single-story ranch has roughly 1,826 sq ft of wall — about 18.3 squares net, so order 21 squares with a 10% waste allowance." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a square of siding?",
+        "acceptedAnswer": { "@type": "Answer", "text": "One square = 100 square feet of wall coverage — the standard unit vinyl, fiber cement, and most other siding types are sold in." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much siding do I subtract for windows and doors?",
+        "acceptedAnswer": { "@type": "Answer", "text": "About 21 sq ft per exterior door (3 × 7 ft) and about 12–15 sq ft per standard window. If you plan to trim around openings, subtract a little less." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do gables need extra siding?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — gable triangles add area. Measure each triangle (base × height ÷ 2) and add it in the gable field; houses with many gables should use 15% waste." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many squares of siding for a 2,000 sq ft house?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A 2,000 sq ft two-story house typically needs 24–28 squares — its exterior walls total roughly 2,400–2,800 sq ft depending on footprint, before waste." }
+      }
+    ]
+  }
+  </script>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="TradeCalc home">
+        <span class="brand-name">TradeCalc</span>
+        <span class="brand-tag">Free calculators for DIYers, homeowners &amp; pros.</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a> › <a href="../../calculators/index.html">Calculators</a> › <span aria-current="page">Siding Calculator</span>
+    </nav>
+
+    <h1>Siding Calculator</h1>
+    <p><strong>Siding is sold by the square — 100 square feet — so the job is gross wall area, minus doors and windows, plus waste, divided by 100. Runs 100% in your browser.</strong></p>
+
+    <section class="tool-box" aria-labelledby="calc-h">
+      <h2 id="calc-h" style="margin-top:0">Siding Calculator</h2>
+      <div id="calc-form">
+        <div class="form-row">
+      <div class="form-field">
+        <label for="f-length">Total wall length (all walls added) (ft)</label>
+        <input type="number" id="f-length" data-field="length" inputmode="decimal" min="0" step="any" placeholder="e.g. 120">
+      </div>
+
+      <div class="form-field">
+        <label for="f-height">Wall height (ft)</label>
+        <input type="number" id="f-height" data-field="height" inputmode="decimal" min="0" step="any" placeholder="e.g. 8">
+      </div>
+
+      <div class="form-field">
+        <label for="f-gables">Gable triangle area (optional) (sq ft)</label>
+        <input type="number" id="f-gables" data-field="gables" inputmode="decimal" min="0" step="any" placeholder="e.g. 0">
+      </div>
+
+      <div class="form-field">
+        <label for="f-doors">Exterior doors</label>
+        <input type="number" id="f-doors" data-field="doors" inputmode="decimal" min="0" step="any" placeholder="e.g. 2">
+      </div>
+
+      <div class="form-field">
+        <label for="f-windows">Windows</label>
+        <input type="number" id="f-windows" data-field="windows" inputmode="decimal" min="0" step="any" placeholder="e.g. 6">
+      </div>
+
+      <div class="form-field">
+        <label for="f-waste">Waste allowance</label>
+        <select id="f-waste" data-field="waste"><option value="10" selected>10% — simple house</option><option value="15">15% — gables / many openings</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-price">Price per square (optional) ($)</label>
+        <input type="number" id="f-price" data-field="price" inputmode="decimal" min="0" step="any" placeholder="e.g. 350">
+      </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="calc-go">Calculate</button>
+      </div>
+      <div class="error" id="calc-err" style="display:none" role="alert"></div>
+      <div class="result" id="calc-out" aria-live="polite">Enter your measurements and press Calculate.</div>
+    </section>
+
+    <section class="prose" aria-labelledby="about-calc">
+      <h2 id="about-calc">About this siding calculator</h2>
+      <p>Siding quantity is a subtraction problem before it is a division problem: <strong>gross wall area, minus openings, plus waste, divided by 100</strong> (one square = 100 sq ft, the unit suppliers quote for vinyl, fiber cement, and most other siding). Openings use planning sizes — about 21 sq ft per exterior door (3 × 7 ft) and about 15 sq ft per standard window — which is close enough because the waste allowance absorbs the difference. Our <a href="../../guides/how-much-siding-do-i-need/index.html">siding guide</a> covers measuring, gables, and the trim budget.</p>
+      <p>Gables are the classic miss: a triangular gable end adds real area (base × height ÷ 2 per triangle), and on a two-story house the gables alone can add several squares. Measure each gable triangle, add the area in the gable field, and let the calculator carry it through. Houses with many gables, dormers, and openings should use the 15% waste figure — long straight runs can hold 10%, but complicated rooflines push waste up, never down.</p>
+      <p>The square count is the same for every siding type — vinyl, fiber cement, wood, and metal are all estimated by the wall area they cover — but how you buy differs: vinyl and aluminum are sold by the square in cartons, while fiber cement and wood lap siding are sold by the plank, so divide the order area by your product's coverage per piece. Trim is separate in all cases: corner posts, J-channel around windows, and starter strips run roughly 10–15% on top of the siding cost.</p>
+      <h2>How to use</h2>
+      <ol>
+        <li>Add up the <strong>length of every exterior wall</strong> and enter the total in feet, plus the <strong>wall height</strong>.</li>
+        <li>Add any <strong>gable triangle area</strong> (base × height ÷ 2 per gable) or leave it at 0.</li>
+        <li>Enter the number of <strong>exterior doors and windows</strong> (about 21 and 15 sq ft each are deducted).</li>
+        <li>Pick a <strong>waste allowance</strong> — 10% simple, 15% for gables and complex houses — and optionally a <strong>price per square</strong>.</li>
+        <li>Press <strong>Calculate</strong> for net area, squares, and the order quantity.</li>
+      </ol>
+
+      <h2>Good to know</h2>
+      <ul>
+        <li>Assumes a single consistent wall height; split-level and multi-height houses should be measured in sections and added.</li>
+        <li>Opening sizes are planning figures (21 sq ft per door, 15 per window) — oversized doors, sliders, and picture windows should be measured exactly and the difference adjusted by hand.</li>
+        <li>Trim, flashing, housewrap, and labor are not included — budget trim at roughly 10–15% of siding cost.</li>
+      </ul>
+    </section>
+
+    <section class="prose faq" aria-labelledby="calc-faq">
+      <h2 id="calc-faq">Frequently asked questions</h2>
+      <details>
+        <summary>How much siding do I need for a 1,500 sq ft house?</summary>
+        <p>A 1,500 sq ft single-story ranch has roughly 1,826 sq ft of wall — about 18.3 squares net, so order 21 squares with a 10% waste allowance.</p>
+      </details>
+      <details>
+        <summary>What is a square of siding?</summary>
+        <p>One square = 100 square feet of wall coverage — the standard unit vinyl, fiber cement, and most other siding types are sold in.</p>
+      </details>
+      <details>
+        <summary>How much siding do I subtract for windows and doors?</summary>
+        <p>About 21 sq ft per exterior door (3 × 7 ft) and about 12–15 sq ft per standard window. If you plan to trim around openings, subtract a little less.</p>
+      </details>
+      <details>
+        <summary>Do gables need extra siding?</summary>
+        <p>Yes — gable triangles add area. Measure each triangle (base × height ÷ 2) and add it in the gable field; houses with many gables should use 15% waste.</p>
+      </details>
+      <details>
+        <summary>How many squares of siding for a 2,000 sq ft house?</summary>
+        <p>A 2,000 sq ft two-story house typically needs 24–28 squares — its exterior walls total roughly 2,400–2,800 sq ft depending on footprint, before waste.</p>
+      </details>
+    </section>
+
+    <section class="related-tools" aria-labelledby="related">
+      <h2 id="related">Related calculators</h2>
+      <div class="tool-grid">
+        <a class="tool-card" href="../paint-calculator/index.html"><h3>Paint Calculator</h3><p>Gallons of paint for walls, with coats.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../roofing-shingle-calculator/index.html"><h3>Roofing Shingle Calculator</h3><p>Shingle bundles & roofing squares from roof size + pitch.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../drywall-calculator/index.html"><h3>Drywall Calculator</h3><p>Drywall sheets for any wall area, with waste.</p><span class="card-cta">Open calculator →</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy</a></li>
+          <li><a href="../../terms.html">Terms</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">© <span id="year">2026</span> TradeCalc. Free calculators for DIYers, homeowners &amp; pros.</p>
+    </div>
+  </footer>
+    <script src="../../assets/logic/siding-calculator.js"></script>
+
+  <script>
+    (function () {
+      var T = window.TradeCalc;
+      document.getElementById('calc-go').addEventListener('click', function () {
+        var vals = {};
+        var inputs = document.querySelectorAll('#calc-form [data-field]');
+        var err = document.getElementById('calc-err');
+        var out = document.getElementById('calc-out');
+        Array.prototype.forEach.call(inputs, function (el) {
+          vals[el.getAttribute('data-field')] = el.value;
+        });
+        try {
+          out.innerHTML = T['siding'](vals);
+          T.hideError(err);
+        } catch (e) {
+          T.showError(err, e.message);
+        }
+      });
+    })();
+  </script>
+
+  <script src="../../assets/main.js"></script>
+
+<div id="tc-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1f2937;color:#f9fafb;padding:14px 18px;font-size:14px;line-height:1.5;box-shadow:0 -2px 12px rgba(0,0,0,.25);font-family:system-ui,-apple-system,sans-serif;">
+  <span>We use cookies for anonymous analytics (Google Analytics) to see which pages are popular. No personal data is collected. <a href="https://mtansari8765lab.github.io/trade-calc/privacy.html" style="color:#93c5fd;text-decoration:underline;">Privacy policy</a></span>
+  <span style="display:inline-block;margin-left:12px;white-space:nowrap;margin-top:8px;">
+    <button id="tc-consent-accept" style="background:#2563eb;color:#fff;border:0;border-radius:6px;padding:8px 16px;margin-right:8px;cursor:pointer;font-size:14px;">Accept</button>
+    <button id="tc-consent-decline" style="background:transparent;color:#e5e7eb;border:1px solid #6b7280;border-radius:6px;padding:8px 16px;cursor:pointer;font-size:14px;">Decline</button>
+  </span>
+</div>
+<script>
+(function(){
+  var KEY='tc-consent-choice', banner=document.getElementById('tc-consent');
+  function apply(choice){
+    if(window.gtag){try{gtag('consent','update',{'analytics_storage':choice});}catch(e){}}
+    try{localStorage.setItem(KEY,choice);}catch(e){}
+    banner.hidden=true;
+  }
+  var saved=null;
+  try{saved=localStorage.getItem(KEY);}catch(e){}
+  if(saved==='granted'||saved==='denied'){ if(window.gtag){try{gtag('consent','update',{'analytics_storage':saved});}catch(e){}} }
+  else { banner.hidden=false; }
+  document.getElementById('tc-consent-accept').addEventListener('click',function(){apply('granted');});
+  document.getElementById('tc-consent-decline').addEventListener('click',function(){apply('denied');});
+})();
+</script>
+
+</body>
+</html>

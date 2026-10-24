@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retaining Wall Calculator — How Many Blocks Do I Need?</title>
+  <meta name="description" content="Free retaining wall calculator: enter wall length, height, and block face size to get courses, blocks per course, total blocks, cap blocks, and order quantity with waste.">
+  <link rel="canonical" href="https://mtansari8765lab.github.io/trade-calc/calculators/retaining-wall-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TradeCalc">
+  <meta property="og:title" content="Retaining Wall Calculator — How Many Blocks Do I Need?">
+  <meta property="og:description" content="Free retaining wall calculator: enter wall length, height, and block face size to get courses, blocks per course, total blocks, cap blocks, and order quantity with waste.">
+  <meta property="og:url" content="https://mtansari8765lab.github.io/trade-calc/calculators/retaining-wall-calculator/">
+  <meta property="og:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Retaining Wall Calculator — How Many Blocks Do I Need?">
+  <meta name="twitter:description" content="Free retaining wall calculator: enter wall length, height, and block face size to get courses, blocks per course, total blocks, cap blocks, and order quantity with waste.">
+  <meta name="twitter:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <link rel="stylesheet" href="../../assets/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-39XP28RSP9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'analytics_storage': 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-39XP28RSP9');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8008490095120298"
+     crossorigin="anonymous"></script>
+</head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many retaining wall blocks do I need for a 20-foot wall?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It depends on height: a 20 ft long, 2 ft high wall with 16 × 8 in blocks is 3 courses of 15 blocks = 45 blocks — order 50 with 10% waste, plus 15 cap blocks." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many blocks per square foot of retaining wall?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Roughly 1 block per 0.89 sq ft for a 16 × 8 in face, but course rounding at the ends of the wall is why this calculator counts whole blocks per row instead of dividing area." }
+      },
+      {
+        "@type": "Question",
+        "name": "How deep should the base course be buried?",
+        "acceptedAnswer": { "@type": "Answer", "text": "At least one full block height, or 10% of the total wall height, whichever is more. For a typical 8-inch unit that is at least 8 inches below finished grade." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many cap blocks do I need?",
+        "acceptedAnswer": { "@type": "Answer", "text": "One cap per block on the top course — the same as blocks per course. Caps are flat finishing units, usually glued, and usually priced separately." }
+      },
+      {
+        "@type": "Question",
+        "name": "How tall can a retaining wall be without an engineer?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most jurisdictions set the trigger at 3–4 feet of exposed height, and surcharge loads above the wall can lower it. Check with your building department before you dig." }
+      }
+    ]
+  }
+  </script>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="TradeCalc home">
+        <span class="brand-name">TradeCalc</span>
+        <span class="brand-tag">Free calculators for DIYers, homeowners &amp; pros.</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a> › <a href="../../calculators/index.html">Calculators</a> › <span aria-current="page">Retaining Wall Calculator</span>
+    </nav>
+
+    <h1>Retaining Wall Calculator</h1>
+    <p><strong>Retaining walls are counted in courses: rows of blocks stacked to the wall height. Enter your wall and block face size to get courses, blocks per course, caps, and the order quantity. Runs 100% in your browser.</strong></p>
+
+    <section class="tool-box" aria-labelledby="calc-h">
+      <h2 id="calc-h" style="margin-top:0">Retaining Wall Calculator</h2>
+      <div id="calc-form">
+        <div class="form-row">
+      <div class="form-field">
+        <label for="f-length">Wall length (ft)</label>
+        <input type="number" id="f-length" data-field="length" inputmode="decimal" min="0" step="any" placeholder="e.g. 20">
+      </div>
+
+      <div class="form-field">
+        <label for="f-height">Total wall height (including buried base course) (ft)</label>
+        <input type="number" id="f-height" data-field="height" inputmode="decimal" min="0" step="any" placeholder="e.g. 2">
+      </div>
+
+      <div class="form-field">
+        <label for="f-blockL">Block face length</label>
+        <select id="f-blockL" data-field="blockL"><option value="16" selected>16 in — standard</option><option value="12">12 in</option><option value="8">8 in — small units</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-blockH">Block face height</label>
+        <select id="f-blockH" data-field="blockH"><option value="8" selected>8 in — standard</option><option value="6">6 in</option><option value="4">4 in — small units</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-waste">Waste allowance</label>
+        <select id="f-waste" data-field="waste"><option value="5">5% — straight wall</option><option value="10" selected>10% — recommended</option><option value="15">15% — corners/curves</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-price">Price per block (optional) ($)</label>
+        <input type="number" id="f-price" data-field="price" inputmode="decimal" min="0" step="any" placeholder="e.g. 4.50">
+      </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="calc-go">Calculate</button>
+      </div>
+      <div class="error" id="calc-err" style="display:none" role="alert"></div>
+      <div class="result" id="calc-out" aria-live="polite">Enter your measurements and press Calculate.</div>
+    </section>
+
+    <section class="prose" aria-labelledby="about-calc">
+      <h2 id="about-calc">About this retaining wall calculator</h2>
+      <p>Retaining wall blocks are counted in two steps, not by area: first the <strong>courses</strong> (rows) from wall height divided by block face height, then the <strong>blocks per course</strong> from wall length divided by block face length. Multiply the two and you have the wall. Area math alone undercounts, because a half-block remainder at the end of every course still costs a full block. Our <a href="../../guides/how-many-retaining-wall-blocks-do-i-need/index.html">retaining wall guide</a> covers buried courses, caps, drainage, and the 4-foot engineering line.</p>
+      <p>Use the block's <strong>actual face dimensions</strong>, not its nominal size: a block sold as 16 inches long is often 15-5/8 inches on the face once the joint is counted, and that 3/8-inch difference adds up over a long wall. If your product's spec sheet gives a different face size, the math here still works — it divides your wall by whatever face size you enter, so enter the real one.</p>
+      <p>The buried base course is the step most first-timers skip. The first course sits below finished grade — at least one full block height, or 10% of total wall height — so the wall height you enter here should be the <strong>total</strong> height including that buried course, not just the height you see above ground. Caps are counted separately: one cap per block on the top course, glued in place, and usually priced separately from wall blocks.</p>
+      <h2>How to use</h2>
+      <ol>
+        <li>Measure your <strong>wall length</strong> in feet along the face of the wall.</li>
+        <li>Enter the <strong>total wall height</strong> in feet, including the buried base course.</li>
+        <li>Choose your block's <strong>face length and height</strong> from the product spec (16 × 8 in is standard).</li>
+        <li>Pick a <strong>waste allowance</strong> — 10% for straight walls, 15% for corners and curves — and optionally a <strong>price per block</strong>.</li>
+        <li>Press <strong>Calculate</strong> for courses, blocks, caps, and the order quantity.</li>
+      </ol>
+
+      <h2>Good to know</h2>
+      <ul>
+        <li>Straight walls only — stepped, curved, and terraced walls need layout per section; curves waste more block.</li>
+        <li>This counts segmental dry-stacked blocks only. Mortared CMU retaining walls, poured concrete, and timber walls use different materials and need separate estimates.</li>
+        <li>Does not size geogrid, footings, or drainage gravel — and it does not say a wall is safe. Most jurisdictions require engineering above 3–4 feet of exposed height, and surcharge loads (driveway, slope, or building above the wall) lower that threshold.</li>
+      </ul>
+    </section>
+
+    <section class="prose faq" aria-labelledby="calc-faq">
+      <h2 id="calc-faq">Frequently asked questions</h2>
+      <details>
+        <summary>How many retaining wall blocks do I need for a 20-foot wall?</summary>
+        <p>It depends on height: a 20 ft long, 2 ft high wall with 16 × 8 in blocks is 3 courses of 15 blocks = 45 blocks — order 50 with 10% waste, plus 15 cap blocks.</p>
+      </details>
+      <details>
+        <summary>How many blocks per square foot of retaining wall?</summary>
+        <p>Roughly 1 block per 0.89 sq ft for a 16 × 8 in face, but course rounding at the ends of the wall is why this calculator counts whole blocks per row instead of dividing area.</p>
+      </details>
+      <details>
+        <summary>How deep should the base course be buried?</summary>
+        <p>At least one full block height, or 10% of the total wall height, whichever is more. For a typical 8-inch unit that is at least 8 inches below finished grade.</p>
+      </details>
+      <details>
+        <summary>How many cap blocks do I need?</summary>
+        <p>One cap per block on the top course — the same as blocks per course. Caps are flat finishing units, usually glued, and usually priced separately.</p>
+      </details>
+      <details>
+        <summary>How tall can a retaining wall be without an engineer?</summary>
+        <p>Most jurisdictions set the trigger at 3–4 feet of exposed height, and surcharge loads above the wall can lower it. Check with your building department before you dig.</p>
+      </details>
+    </section>
+
+    <section class="related-tools" aria-labelledby="related">
+      <h2 id="related">Related calculators</h2>
+      <div class="tool-grid">
+        <a class="tool-card" href="../concrete-block-calculator/index.html"><h3>Concrete Block Calculator</h3><p>Concrete blocks & mortar bags for block walls.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../concrete-calculator/index.html"><h3>Concrete Calculator</h3><p>Bags of concrete & cubic yards for slabs, footings & posts.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../rebar-calculator/index.html"><h3>Rebar Calculator</h3><p>Rebar bars, weight & sticks for concrete slabs.</p><span class="card-cta">Open calculator →</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy</a></li>
+          <li><a href="../../terms.html">Terms</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">© <span id="year">2026</span> TradeCalc. Free calculators for DIYers, homeowners &amp; pros.</p>
+    </div>
+  </footer>
+    <script src="../../assets/logic/retaining-wall-calculator.js"></script>
+
+  <script>
+    (function () {
+      var T = window.TradeCalc;
+      document.getElementById('calc-go').addEventListener('click', function () {
+        var vals = {};
+        var inputs = document.querySelectorAll('#calc-form [data-field]');
+        var err = document.getElementById('calc-err');
+        var out = document.getElementById('calc-out');
+        Array.prototype.forEach.call(inputs, function (el) {
+          vals[el.getAttribute('data-field')] = el.value;
+        });
+        try {
+          out.innerHTML = T['retaining'](vals);
+          T.hideError(err);
+        } catch (e) {
+          T.showError(err, e.message);
+        }
+      });
+    })();
+  </script>
+
+  <script src="../../assets/main.js"></script>
+
+<div id="tc-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1f2937;color:#f9fafb;padding:14px 18px;font-size:14px;line-height:1.5;box-shadow:0 -2px 12px rgba(0,0,0,.25);font-family:system-ui,-apple-system,sans-serif;">
+  <span>We use cookies for anonymous analytics (Google Analytics) to see which pages are popular. No personal data is collected. <a href="https://mtansari8765lab.github.io/trade-calc/privacy.html" style="color:#93c5fd;text-decoration:underline;">Privacy policy</a></span>
+  <span style="display:inline-block;margin-left:12px;white-space:nowrap;margin-top:8px;">
+    <button id="tc-consent-accept" style="background:#2563eb;color:#fff;border:0;border-radius:6px;padding:8px 16px;margin-right:8px;cursor:pointer;font-size:14px;">Accept</button>
+    <button id="tc-consent-decline" style="background:transparent;color:#e5e7eb;border:1px solid #6b7280;border-radius:6px;padding:8px 16px;cursor:pointer;font-size:14px;">Decline</button>
+  </span>
+</div>
+<script>
+(function(){
+  var KEY='tc-consent-choice', banner=document.getElementById('tc-consent');
+  function apply(choice){
+    if(window.gtag){try{gtag('consent','update',{'analytics_storage':choice});}catch(e){}}
+    try{localStorage.setItem(KEY,choice);}catch(e){}
+    banner.hidden=true;
+  }
+  var saved=null;
+  try{saved=localStorage.getItem(KEY);}catch(e){}
+  if(saved==='granted'||saved==='denied'){ if(window.gtag){try{gtag('consent','update',{'analytics_storage':saved});}catch(e){}} }
+  else { banner.hidden=false; }
+  document.getElementById('tc-consent-accept').addEventListener('click',function(){apply('granted');});
+  document.getElementById('tc-consent-decline').addEventListener('click',function(){apply('denied');});
+})();
+</script>
+
+</body>
+</html>
