@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floor Joist Calculator — How Many Floor Joists Do I Need?</title>
+  <meta name="description" content="Free floor joist calculator: enter floor width and joist spacing to get the joist count, rim boards, and total lumber length for your floor frame.">
+  <link rel="canonical" href="https://mtansari8765lab.github.io/trade-calc/calculators/floor-joist-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TradeCalc">
+  <meta property="og:title" content="Floor Joist Calculator — How Many Floor Joists Do I Need?">
+  <meta property="og:description" content="Free floor joist calculator: enter floor width and joist spacing to get the joist count, rim boards, and total lumber length for your floor frame.">
+  <meta property="og:url" content="https://mtansari8765lab.github.io/trade-calc/calculators/floor-joist-calculator/">
+  <meta property="og:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Floor Joist Calculator — How Many Floor Joists Do I Need?">
+  <meta name="twitter:description" content="Free floor joist calculator: enter floor width and joist spacing to get the joist count, rim boards, and total lumber length for your floor frame.">
+  <meta name="twitter:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <link rel="stylesheet" href="../../assets/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-39XP28RSP9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'analytics_storage': 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-39XP28RSP9');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8008490095120298"
+     crossorigin="anonymous"></script>
+</head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many floor joists do I need for a 20-foot floor?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A 20 ft wide floor at 16 inches on center needs ceiling(240 ÷ 16) + 1 = 16 joists, plus 2 rim joists. Order 18 joists with 10% waste." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the standard floor joist spacing?",
+        "acceptedAnswer": { "@type": "Answer", "text": "16 inches on center is the standard for most residential floors. 12 inches suits heavy loads and tile; 24 inches suits light loads and shorter spans only." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I count the rim joists separately?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — rim joists are the two end boards running perpendicular to the field joists, each as long as the span. This calculator counts them separately from the field joists." }
+      },
+      {
+        "@type": "Question",
+        "name": "What size joist do I need for a 12-foot span?",
+        "acceptedAnswer": { "@type": "Answer", "text": "That depends on species, grade, spacing, and load — check your local span tables. As a rough planning reference, 2×10 joists at 16 inches on center commonly cover spans around 12–14 feet, but the table for your lumber governs." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much waste should I add for floor joists?",
+        "acceptedAnswer": { "@type": "Answer", "text": "10% is a good default: it covers miscuts, a warped board, and end trimming. Add 15% if the floor has many openings or angled sections." }
+      }
+    ]
+  }
+  </script>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="TradeCalc home">
+        <span class="brand-name">TradeCalc</span>
+        <span class="brand-tag">Free calculators for DIYers, homeowners &amp; pros.</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a> › <a href="../../calculators/index.html">Calculators</a> › <span aria-current="page">Floor Joist Calculator</span>
+    </nav>
+
+    <h1>Floor Joist Calculator</h1>
+    <p><strong>Joists are counted across the width of the floor, not along the span: divide the width by the spacing, round up, and add the end joist. Enter your floor to get the joist count, rim boards, and total lumber length. Runs 100% in your browser.</strong></p>
+
+    <section class="tool-box" aria-labelledby="calc-h">
+      <h2 id="calc-h" style="margin-top:0">Floor Joist Calculator</h2>
+      <div id="calc-form">
+        <div class="form-row">
+      <div class="form-field">
+        <label for="f-width">Floor width (perpendicular to joists) (ft)</label>
+        <input type="number" id="f-width" data-field="width" inputmode="decimal" min="0" step="any" placeholder="e.g. 20">
+      </div>
+
+      <div class="form-field">
+        <label for="f-spacing">Joist spacing (on center)</label>
+        <select id="f-spacing" data-field="spacing"><option value="12">12 in — heavy loads / tile</option><option value="16" selected>16 in — standard</option><option value="19.2">19.2 in — engineered layouts</option><option value="24">24 in — light loads</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-span">Joist span (length of each joist) (ft)</label>
+        <input type="number" id="f-span" data-field="span" inputmode="decimal" min="0" step="any" placeholder="e.g. 12">
+      </div>
+
+      <div class="form-field">
+        <label for="f-waste">Waste allowance</label>
+        <select id="f-waste" data-field="waste"><option value="0">0% — exact</option><option value="5">5%</option><option value="10" selected>10% — recommended</option><option value="15">15% — many cuts</option></select>
+      </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="calc-go">Calculate</button>
+      </div>
+      <div class="error" id="calc-err" style="display:none" role="alert"></div>
+      <div class="result" id="calc-out" aria-live="polite">Enter your measurements and press Calculate.</div>
+    </section>
+
+    <section class="prose" aria-labelledby="about-calc">
+      <h2 id="about-calc">About this floor joist calculator</h2>
+      <p>The count follows the spacing, not the span: <strong>joists = ceiling(floor width in inches ÷ spacing in inches) + 1</strong>. The +1 is the end joist — without it, the last bay of the floor has no joist at the far edge. A 20 ft wide floor at 16 inches on center is ceiling(240 ÷ 16) + 1 = <strong>16 joists</strong>, and a 15 ft wide floor at the same spacing is ceiling(180 ÷ 16) + 1 = <strong>13 joists</strong>. Our <a href="../../guides/how-many-floor-joists-do-i-need/index.html">floor joist guide</a> works through the same count with span-table notes.</p>
+      <p>Width and span are easy to swap by mistake. <strong>Width</strong> here is the distance across the joists — the direction you walk when you step from joist to joist. <strong>Span</strong> is the length of each joist, wall to wall or beam to beam, and it sets how long a board to buy, not how many you need. If your floor is 20 ft across and the joists run 12 ft, you need 16 joists of 12 ft each, not 12 joists of 20 ft.</p>
+      <p>Rim joists (also called band or end joists) cap the ends of the floor frame: two boards, each as long as the span, running perpendicular to the joists. They are counted separately from the field joists above, and they also carry the ends of the subfloor sheets. Blocking between joists — short pieces that stiffen the floor and stop joists twisting — is a separate count if your layout calls for it, typically one row of blocking per 8 ft of span.</p>
+      <h2>How to use</h2>
+      <ol>
+        <li>Measure the <strong>floor width</strong> in feet, across the joists (perpendicular to their direction).</li>
+        <li>Choose the <strong>joist spacing</strong> — 16 inches on center is standard for most homes; 12 inches suits heavy loads and tile floors.</li>
+        <li>Enter the <strong>joist span</strong> in feet: the length each joist must run, support to support.</li>
+        <li>Pick a <strong>waste allowance</strong> — 10% covers miscuts and a warped board or two.</li>
+        <li>Press <strong>Calculate</strong> for the joist count, rim boards, and total lumber length.</li>
+      </ol>
+
+      <h2>Good to know</h2>
+      <ul>
+        <li>Count only — it does not pick a joist size (2×8, 2×10, 2×12) or confirm a span is safe. Size and spacing must be checked against IRC span tables or an engineered design for your species, grade, and load.</li>
+        <li>Straight rectangular floors only. L-shaped floors, floors with stair openings, and floors carrying partition walls need layout per section, with doubled joists under walls and around openings.</li>
+        <li>Engineered joists (I-joists, LVL, floor trusses) follow manufacturer span tables, not dimensional-lumber tables — the count math is the same, but the sizing is not.</li>
+      </ul>
+    </section>
+
+    <section class="prose faq" aria-labelledby="calc-faq">
+      <h2 id="calc-faq">Frequently asked questions</h2>
+      <details>
+        <summary>How many floor joists do I need for a 20-foot floor?</summary>
+        <p>A 20 ft wide floor at 16 inches on center needs ceiling(240 ÷ 16) + 1 = 16 joists, plus 2 rim joists. Order 18 joists with 10% waste.</p>
+      </details>
+      <details>
+        <summary>What is the standard floor joist spacing?</summary>
+        <p>16 inches on center is the standard for most residential floors. 12 inches suits heavy loads and tile; 24 inches suits light loads and shorter spans only.</p>
+      </details>
+      <details>
+        <summary>Do I count the rim joists separately?</summary>
+        <p>Yes — rim joists are the two end boards running perpendicular to the field joists, each as long as the span. This calculator counts them separately from the field joists.</p>
+      </details>
+      <details>
+        <summary>What size joist do I need for a 12-foot span?</summary>
+        <p>That depends on species, grade, spacing, and load — check your local span tables. As a rough planning reference, 2×10 joists at 16 inches on center commonly cover spans around 12–14 feet, but the table for your lumber governs.</p>
+      </details>
+      <details>
+        <summary>How much waste should I add for floor joists?</summary>
+        <p>10% is a good default: it covers miscuts, a warped board, and end trimming. Add 15% if the floor has many openings or angled sections.</p>
+      </details>
+    </section>
+
+    <section class="related-tools" aria-labelledby="related">
+      <h2 id="related">Related calculators</h2>
+      <div class="tool-grid">
+        <a class="tool-card" href="../wall-stud-calculator/index.html"><h3>Wall Stud Calculator</h3><p>Wall studs, plates & buy list for framing a wall.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../deck-board-calculator/index.html"><h3>Deck Board Calculator</h3><p>Decking boards for any deck size.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../stair-calculator/index.html"><h3>Stair Calculator</h3><p>Risers, treads, run & stringer length for stairs.</p><span class="card-cta">Open calculator →</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy</a></li>
+          <li><a href="../../terms.html">Terms</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">© <span id="year">2026</span> TradeCalc. Free calculators for DIYers, homeowners &amp; pros.</p>
+    </div>
+  </footer>
+    <script src="../../assets/logic/floor-joist-calculator.js"></script>
+
+  <script>
+    (function () {
+      var T = window.TradeCalc;
+      document.getElementById('calc-go').addEventListener('click', function () {
+        var vals = {};
+        var inputs = document.querySelectorAll('#calc-form [data-field]');
+        var err = document.getElementById('calc-err');
+        var out = document.getElementById('calc-out');
+        Array.prototype.forEach.call(inputs, function (el) {
+          vals[el.getAttribute('data-field')] = el.value;
+        });
+        try {
+          out.innerHTML = T['joist'](vals);
+          T.hideError(err);
+        } catch (e) {
+          T.showError(err, e.message);
+        }
+      });
+    })();
+  </script>
+
+  <script src="../../assets/main.js"></script>
+
+<div id="tc-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1f2937;color:#f9fafb;padding:14px 18px;font-size:14px;line-height:1.5;box-shadow:0 -2px 12px rgba(0,0,0,.25);font-family:system-ui,-apple-system,sans-serif;">
+  <span>We use cookies for anonymous analytics (Google Analytics) to see which pages are popular. No personal data is collected. <a href="https://mtansari8765lab.github.io/trade-calc/privacy.html" style="color:#93c5fd;text-decoration:underline;">Privacy policy</a></span>
+  <span style="display:inline-block;margin-left:12px;white-space:nowrap;margin-top:8px;">
+    <button id="tc-consent-accept" style="background:#2563eb;color:#fff;border:0;border-radius:6px;padding:8px 16px;margin-right:8px;cursor:pointer;font-size:14px;">Accept</button>
+    <button id="tc-consent-decline" style="background:transparent;color:#e5e7eb;border:1px solid #6b7280;border-radius:6px;padding:8px 16px;cursor:pointer;font-size:14px;">Decline</button>
+  </span>
+</div>
+<script>
+(function(){
+  var KEY='tc-consent-choice', banner=document.getElementById('tc-consent');
+  function apply(choice){
+    if(window.gtag){try{gtag('consent','update',{'analytics_storage':choice});}catch(e){}}
+    try{localStorage.setItem(KEY,choice);}catch(e){}
+    banner.hidden=true;
+  }
+  var saved=null;
+  try{saved=localStorage.getItem(KEY);}catch(e){}
+  if(saved==='granted'||saved==='denied'){ if(window.gtag){try{gtag('consent','update',{'analytics_storage':saved});}catch(e){}} }
+  else { banner.hidden=false; }
+  document.getElementById('tc-consent-accept').addEventListener('click',function(){apply('granted');});
+  document.getElementById('tc-consent-decline').addEventListener('click',function(){apply('denied');});
+})();
+</script>
+
+</body>
+</html>
