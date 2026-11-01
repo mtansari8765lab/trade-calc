@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baseboard Calculator — How Much Baseboard Do I Need?</title>
+  <meta name="description" content="Free baseboard calculator: enter room length, width, and door count to get net linear feet, feet to order with waste, and sticks of baseboard to buy.">
+  <link rel="canonical" href="https://mtansari8765lab.github.io/trade-calc/calculators/baseboard-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TradeCalc">
+  <meta property="og:title" content="Baseboard Calculator — How Much Baseboard Do I Need?">
+  <meta property="og:description" content="Free baseboard calculator: enter room length, width, and door count to get net linear feet, feet to order with waste, and sticks of baseboard to buy.">
+  <meta property="og:url" content="https://mtansari8765lab.github.io/trade-calc/calculators/baseboard-calculator/">
+  <meta property="og:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Baseboard Calculator — How Much Baseboard Do I Need?">
+  <meta name="twitter:description" content="Free baseboard calculator: enter room length, width, and door count to get net linear feet, feet to order with waste, and sticks of baseboard to buy.">
+  <meta name="twitter:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <link rel="stylesheet" href="../../assets/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-39XP28RSP9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'analytics_storage': 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-39XP28RSP9');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8008490095120298"
+     crossorigin="anonymous"></script>
+</head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much baseboard do I need for a 12x12 room?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A 12 × 12 ft room with 1 doorway needs 48 ft of perimeter minus 3 ft for the door = 45 ft net, 50 ft to order with 10% waste, or 7 sticks of 8 ft." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many feet do you deduct per doorway for baseboard?",
+        "acceptedAnswer": { "@type": "Answer", "text": "3 ft per standard interior doorway — the standard door width. Deduct the actual width for double doors or wide cased openings." }
+      },
+      {
+        "@type": "Question",
+        "name": "What waste percentage should I add for baseboard?",
+        "acceptedAnswer": { "@type": "Answer", "text": "10% for a plain rectangular room; 15% for rooms with many corners, bay windows, or angled walls, where miter and cope cuts waste more." }
+      },
+      {
+        "@type": "Question",
+        "name": "What length do baseboard sticks come in?",
+        "acceptedAnswer": { "@type": "Answer", "text": "8 ft is the most common stock length, with 12 ft and 16 ft also available. Longer sticks mean fewer joints on long walls but are harder to transport." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does baseboard go behind doors?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No — baseboard stops at the door casing on both sides, which is why each doorway is deducted from the perimeter." }
+      }
+    ]
+  }
+  </script>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="TradeCalc home">
+        <span class="brand-name">TradeCalc</span>
+        <span class="brand-tag">Free calculators for DIYers, homeowners &amp; pros.</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a> › <a href="../../calculators/index.html">Calculators</a> › <span aria-current="page">Baseboard Calculator</span>
+    </nav>
+
+    <h1>Baseboard Calculator</h1>
+    <p><strong>Baseboard runs around the walls, minus the doorways it does not cross. Enter your room and door count to get the net footage, the order footage with waste, and the stick count. Runs 100% in your browser.</strong></p>
+
+    <section class="tool-box" aria-labelledby="calc-h">
+      <h2 id="calc-h" style="margin-top:0">Baseboard Calculator</h2>
+      <div id="calc-form">
+        <div class="form-row">
+      <div class="form-field">
+        <label for="f-length">Room length (ft)</label>
+        <input type="number" id="f-length" data-field="length" inputmode="decimal" min="0" step="any" placeholder="e.g. 12">
+      </div>
+
+      <div class="form-field">
+        <label for="f-width">Room width (ft)</label>
+        <input type="number" id="f-width" data-field="width" inputmode="decimal" min="0" step="any" placeholder="e.g. 12">
+      </div>
+
+      <div class="form-field">
+        <label for="f-doors">Number of doorways (doors)</label>
+        <input type="number" id="f-doors" data-field="doors" inputmode="decimal" min="0" step="any" placeholder="e.g. 1">
+      </div>
+
+      <div class="form-field">
+        <label for="f-stick">Baseboard stick length</label>
+        <select id="f-stick" data-field="stick"><option value="8" selected>8 ft stick (most common)</option><option value="12">12 ft stick</option><option value="16">16 ft stick</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-waste">Waste allowance</label>
+        <select id="f-waste" data-field="waste"><option value="0">0% — exact</option><option value="5">5%</option><option value="10" selected>10% — recommended</option><option value="15">15% — many corners/cuts</option></select>
+      </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="calc-go">Calculate</button>
+      </div>
+      <div class="error" id="calc-err" style="display:none" role="alert"></div>
+      <div class="result" id="calc-out" aria-live="polite">Enter your measurements and press Calculate.</div>
+    </section>
+
+    <section class="prose" aria-labelledby="about-calc">
+      <h2 id="about-calc">About this baseboard calculator</h2>
+      <p>Baseboard math is perimeter minus doorways: <strong>net feet = 2 × (length + width) − 3 ft per doorway</strong>, then <strong>order feet = ceiling(net × (1 + waste))</strong> and <strong>sticks = ceiling(order feet ÷ stick length)</strong>. A 12 × 12 ft room with 1 doorway is 48 ft of perimeter, <strong>45 ft net</strong>, 50 ft to order with 10% waste, and <strong>7 sticks of 8 ft</strong>. Our <a href="../../guides/how-much-baseboard-do-i-need/index.html">baseboard guide</a> works through the same count with corner and casing notes.</p>
+      <p>The 3 ft door deduction is the standard interior door width (typically 30–36 inches of opening, plus casing). It is an estimate, not a measurement: if your doors are 36-inch doors, deduct 3 ft each and the waste allowance absorbs the difference; if you have a 5 ft cased opening or a double door, deduct its actual width instead by counting it as roughly two doorways. Measure the walls themselves at baseboard height, not at the floor trim line where a bowed wall can add inches.</p>
+      <p>Corners eat baseboard. A mitered outside corner wastes a few inches per cut, and a coped inside corner wastes a little more on the first attempt — that is what the waste allowance is for, and why rooms with many corners, bay windows, or short wall jogs deserve 15% instead of 10%. Buy one spare stick beyond the count if the profile is unusual or the supplier is far away: baseboard from a different dye lot or mill run can differ slightly in profile and finish.</p>
+      <h2>How to use</h2>
+      <ol>
+        <li>Measure the <strong>room length and width</strong> in feet, wall to wall.</li>
+        <li>Count the <strong>doorways</strong> — every opening baseboard does not cross, including cased openings without a door.</li>
+        <li>Choose the <strong>stick length</strong> your supplier stocks (8 ft is most common).</li>
+        <li>Pick a <strong>waste allowance</strong> — 10% for a plain rectangle, 15% for many corners or angled walls.</li>
+        <li>Press <strong>Calculate</strong> for net feet, order feet, and the stick count.</li>
+      </ol>
+
+      <h2>Good to know</h2>
+      <ul>
+        <li>Rectangular rooms only. L-shaped rooms, rooms with bay windows, and rooms with fireplace bump-outs need the perimeter measured wall by wall, then the same door deduction and waste math applied to the total.</li>
+        <li>The 3 ft door deduction assumes standard interior doors. Deduct the actual width for double doors, wide cased openings, and sliding patio doors (count a 6 ft slider as two doorways).</li>
+        <li>This counts straight baseboard only — it does not count shoe molding, chair rail, or the extra material for built-up (two-piece) baseboard profiles.</li>
+      </ul>
+    </section>
+
+    <section class="prose" aria-labelledby="formula-standards">
+      <h2 id="formula-standards">Formula &amp; standards</h2>
+      <p><strong>Formula:</strong> Net feet = 2 × (length + width) − 3 ft per doorway; order feet = ceiling(net × (1 + waste)); sticks = ceiling(order feet ÷ stick length).</p>
+      <p><strong>Standard:</strong> None — 3 ft is the standard interior door width; no code governs trim quantity arithmetic.</p>
+      <p><strong>Waste allowance:</strong> Miter and cope cuts at corners, plus a spare for profile mismatch between mill runs.</p>
+    </section>
+
+    <section class="prose faq" aria-labelledby="calc-faq">
+      <h2 id="calc-faq">Frequently asked questions</h2>
+      <details>
+        <summary>How much baseboard do I need for a 12x12 room?</summary>
+        <p>A 12 × 12 ft room with 1 doorway needs 48 ft of perimeter minus 3 ft for the door = 45 ft net, 50 ft to order with 10% waste, or 7 sticks of 8 ft.</p>
+      </details>
+      <details>
+        <summary>How many feet do you deduct per doorway for baseboard?</summary>
+        <p>3 ft per standard interior doorway — the standard door width. Deduct the actual width for double doors or wide cased openings.</p>
+      </details>
+      <details>
+        <summary>What waste percentage should I add for baseboard?</summary>
+        <p>10% for a plain rectangular room; 15% for rooms with many corners, bay windows, or angled walls, where miter and cope cuts waste more.</p>
+      </details>
+      <details>
+        <summary>What length do baseboard sticks come in?</summary>
+        <p>8 ft is the most common stock length, with 12 ft and 16 ft also available. Longer sticks mean fewer joints on long walls but are harder to transport.</p>
+      </details>
+      <details>
+        <summary>Does baseboard go behind doors?</summary>
+        <p>No — baseboard stops at the door casing on both sides, which is why each doorway is deducted from the perimeter.</p>
+      </details>
+    </section>
+
+    <section class="related-tools" aria-labelledby="related">
+      <h2 id="related">Related calculators</h2>
+      <div class="tool-grid">
+        <a class="tool-card" href="../laminate-flooring-calculator/index.html"><h3>Laminate Flooring Calculator</h3><p>Laminate boxes & underlayment for any room.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../wall-stud-calculator/index.html"><h3>Wall Stud Calculator</h3><p>Wall studs, plates & buy list for framing a wall.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../paint-calculator/index.html"><h3>Paint Calculator</h3><p>Gallons of paint for walls, with coats.</p><span class="card-cta">Open calculator →</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy</a></li>
+          <li><a href="../../terms.html">Terms</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">© <span id="year">2026</span> TradeCalc. Free calculators for DIYers, homeowners &amp; pros.</p>
+    </div>
+  </footer>
+    <script src="../../assets/logic/baseboard-calculator.js"></script>
+
+  <script>
+    (function () {
+      var T = window.TradeCalc;
+      document.getElementById('calc-go').addEventListener('click', function () {
+        var vals = {};
+        var inputs = document.querySelectorAll('#calc-form [data-field]');
+        var err = document.getElementById('calc-err');
+        var out = document.getElementById('calc-out');
+        Array.prototype.forEach.call(inputs, function (el) {
+          vals[el.getAttribute('data-field')] = el.value;
+        });
+        try {
+          out.innerHTML = T['baseboard'](vals);
+          T.hideError(err);
+        } catch (e) {
+          T.showError(err, e.message);
+        }
+      });
+    })();
+  </script>
+
+  <script src="../../assets/main.js"></script>
+
+<div id="tc-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1f2937;color:#f9fafb;padding:14px 18px;font-size:14px;line-height:1.5;box-shadow:0 -2px 12px rgba(0,0,0,.25);font-family:system-ui,-apple-system,sans-serif;">
+  <span>We use cookies for anonymous analytics (Google Analytics) to see which pages are popular. No personal data is collected. <a href="https://mtansari8765lab.github.io/trade-calc/privacy.html" style="color:#93c5fd;text-decoration:underline;">Privacy policy</a></span>
+  <span style="display:inline-block;margin-left:12px;white-space:nowrap;margin-top:8px;">
+    <button id="tc-consent-accept" style="background:#2563eb;color:#fff;border:0;border-radius:6px;padding:8px 16px;margin-right:8px;cursor:pointer;font-size:14px;">Accept</button>
+    <button id="tc-consent-decline" style="background:transparent;color:#e5e7eb;border:1px solid #6b7280;border-radius:6px;padding:8px 16px;cursor:pointer;font-size:14px;">Decline</button>
+  </span>
+</div>
+<script>
+(function(){
+  var KEY='tc-consent-choice', banner=document.getElementById('tc-consent');
+  function apply(choice){
+    if(window.gtag){try{gtag('consent','update',{'analytics_storage':choice});}catch(e){}}
+    try{localStorage.setItem(KEY,choice);}catch(e){}
+    banner.hidden=true;
+  }
+  var saved=null;
+  try{saved=localStorage.getItem(KEY);}catch(e){}
+  if(saved==='granted'||saved==='denied'){ if(window.gtag){try{gtag('consent','update',{'analytics_storage':saved});}catch(e){}} }
+  else { banner.hidden=false; }
+  document.getElementById('tc-consent-accept').addEventListener('click',function(){apply('granted');});
+  document.getElementById('tc-consent-decline').addEventListener('click',function(){apply('denied');});
+})();
+</script>
+
+</body>
+</html>
