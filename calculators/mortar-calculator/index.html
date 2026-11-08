@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortar Calculator — How Many Bags of Mortar Do I Need?</title>
+  <meta name="description" content="Free mortar calculator: enter wall area and unit type to get bricks or blocks and the number of 80 lb bags of mortar mix to buy, with waste.">
+  <link rel="canonical" href="https://mtansari8765lab.github.io/trade-calc/calculators/mortar-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TradeCalc">
+  <meta property="og:title" content="Mortar Calculator — How Many Bags of Mortar Do I Need?">
+  <meta property="og:description" content="Free mortar calculator: enter wall area and unit type to get bricks or blocks and the number of 80 lb bags of mortar mix to buy, with waste.">
+  <meta property="og:url" content="https://mtansari8765lab.github.io/trade-calc/calculators/mortar-calculator/">
+  <meta property="og:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mortar Calculator — How Many Bags of Mortar Do I Need?">
+  <meta name="twitter:description" content="Free mortar calculator: enter wall area and unit type to get bricks or blocks and the number of 80 lb bags of mortar mix to buy, with waste.">
+  <meta name="twitter:image" content="https://mtansari8765lab.github.io/trade-calc/assets/og-image.png">
+  <link rel="stylesheet" href="../../assets/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-39XP28RSP9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'analytics_storage': 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-39XP28RSP9');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8008490095120298"
+     crossorigin="anonymous"></script>
+</head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many bags of mortar do I need for 100 square feet of brick?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A 100 sq ft single-wythe modular brick wall needs about 686 bricks, which is 19 bags of 80 lb mortar at best and 21 bags with 10% waste." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many blocks does one 80 lb bag of mortar lay?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Up to 13 standard 8×8×16 in blocks at 3/8-in joints, per the Quikrete Mortar Mix No. 1102 data sheet — budget one bag per 12 blocks with waste. Sakrete lists 12 blocks for its Type S mix." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many bricks does one 80 lb bag of mortar lay?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Up to 37 standard bricks at 3/8-in joints, per the Quikrete data sheet. Budget about 3 bags per 100 bricks with waste." }
+      },
+      {
+        "@type": "Question",
+        "name": "What type of mortar should I use?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Type N for most above-grade walls, Type S for below grade and retaining walls, Type M for foundations and heavy loads, Type O only for interior non-load-bearing work and repointing old soft brick (ASTM C270)." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does a wider mortar joint use more mortar?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — a 1/2-in joint uses roughly a third more mortar than a 3/8-in joint. Fully bedded block also uses roughly a third more than face-shell bedding." }
+      }
+    ]
+  }
+  </script>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="TradeCalc home">
+        <span class="brand-name">TradeCalc</span>
+        <span class="brand-tag">Free calculators for DIYers, homeowners &amp; pros.</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../../index.html">Home</a> › <a href="../../calculators/index.html">Calculators</a> › <span aria-current="page">Mortar Calculator</span>
+    </nav>
+
+    <h1>Mortar Calculator</h1>
+    <p><strong>Mortar is sold by the bag, and the bag is rated by how many bricks or blocks it lays. Enter your wall area and unit type to get the unit count and the bag count. Runs 100% in your browser.</strong></p>
+
+    <section class="tool-box" aria-labelledby="calc-h">
+      <h2 id="calc-h" style="margin-top:0">Mortar Calculator</h2>
+      <div id="calc-form">
+        <div class="form-row">
+      <div class="form-field">
+        <label for="f-mode">Wall unit</label>
+        <select id="f-mode" data-field="mode"><option value="brick" selected>Modular brick (3/8-in joints)</option><option value="block">Standard 8x8x16 in block (3/8-in joints)</option></select>
+      </div>
+
+      <div class="form-field">
+        <label for="f-area">Wall area (sq ft)</label>
+        <input type="number" id="f-area" data-field="area" inputmode="decimal" min="0" step="any" placeholder="e.g. 100">
+      </div>
+
+      <div class="form-field">
+        <label for="f-waste">Waste allowance</label>
+        <select id="f-waste" data-field="waste"><option value="0">0% — exact</option><option value="10" selected>10% — recommended</option><option value="15">15% — many cuts / first wall</option></select>
+      </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="calc-go">Calculate</button>
+      </div>
+      <div class="error" id="calc-err" style="display:none" role="alert"></div>
+      <div class="result" id="calc-out" aria-live="polite">Enter your measurements and press Calculate.</div>
+    </section>
+
+    <section class="prose" aria-labelledby="about-calc">
+      <h2 id="about-calc">About this mortar calculator</h2>
+      <p>Mortar math is units divided by the bag rate: <strong>units = wall area × units per sq ft</strong> (6.86 modular bricks or 1.125 standard blocks per sq ft at 3/8-in joints), then <strong>bags = ceiling(units ÷ bags per bag × (1 + waste))</strong>, where one 80 lb bag lays up to <strong>37 bricks or 13 blocks</strong> (Quikrete Mortar Mix No. 1102 data sheet). A 100 sq ft single-wythe modular brick wall is <strong>686 bricks</strong>, which is 19 bags at best and <strong>21 bags with 10% waste</strong>; the same wall in block is 113 blocks, or <strong>10 bags with 10% waste</strong>. Our <a href="../../guides/how-many-bags-of-mortar-do-i-need/index.html">mortar guide</a> works through the same count with mortar types and joint notes.</p>
+      <p>The bag rate is a best case, not a guarantee. Quikrete's "up to 37 bricks" assumes a skilled mason, a full bed, and 3/8-in joints — mortar dropped on the ground, furrowed beds, and a tub left half-full at the end of the day all eat into it, which is why the calculator adds a waste allowance on top of the rated yield instead of trusting it. A 1/2-in joint uses roughly a third more mortar than a 3/8-in joint, and fully bedded block (mortar across the whole block face) uses roughly a third more than face-shell bedding (mortar only on the two face shells). If your joints will be wider than 3/8 in, use the 15% allowance or step up a bag.</p>
+      <p>Mortar type matters more than the bag count. ASTM C270 defines the types: Type N is the general-purpose mortar for most above-grade walls, Type S is stronger and used below grade, for retaining walls, and where wind or soil loads are higher, Type M is the strongest and is used for foundations and heavy loads, and Type O is the weakest, for interior non-load-bearing work and repointing old soft brick. The bag rate is the same across types — the difference is strength, not yield — so pick the type your wall needs first, then count bags. Our <a href="../../calculators/brick-calculator/index.html">brick calculator</a> and <a href="../../calculators/concrete-block-calculator/index.html">concrete block calculator</a> give the unit counts this calculator starts from.</p>
+      <h2>How to use</h2>
+      <ol>
+        <li>Choose the <strong>wall unit</strong> — modular brick or standard 8×8×16 in block, both at 3/8-in joints.</li>
+        <li>Enter the <strong>wall area</strong> in square feet (length × height, minus large openings).</li>
+        <li>Pick a <strong>waste allowance</strong> — 10% standard, 15% for many cuts, wide joints, or a first wall.</li>
+        <li>Press <strong>Calculate</strong> for the unit count and the 80 lb bag count.</li>
+      </ol>
+
+      <h2>Good to know</h2>
+      <ul>
+        <li>Single-wythe walls only (one brick or block thick). Double-wythe brick walls need twice the units — double the wall area first, then run the calculator.</li>
+        <li>The bag rate (37 bricks / 13 blocks per 80 lb bag) is Quikrete's published "up to" figure for 3/8-in joints. Other makers differ by 5–10%, and 1/2-in joints or full bedding use roughly a third more mortar.</li>
+        <li>This counts premixed bagged mortar only. Site-mixed mortar (masonry cement + sand) is cheaper past about 300 blocks or 1,000 bricks — for that, count bags of masonry cement instead, roughly 30 blocks per bag mixed with about 240 lb of sand.</li>
+      </ul>
+    </section>
+
+    <section class="prose" aria-labelledby="formula-standards">
+      <h2 id="formula-standards">Formula &amp; standards</h2>
+      <p><strong>Formula:</strong> Bags = ceiling(units ÷ bags per bag × (1 + waste)); units = wall area × 6.86 (modular brick) or 1.125 (standard block).</p>
+      <p><strong>Standard:</strong> Quikrete Mortar Mix No. 1102 data sheet: one 80 lb bag lays up to 37 standard bricks or 13 standard 8×8×16 blocks at 3/8-in joints; ASTM C270 covers mortar types (N, S, M, O).</p>
+      <p><strong>Waste allowance:</strong> Mortar dropped, furrowed beds, and tub leftovers; the published rates are 'up to' best cases, so the waste allowance matters.</p>
+    </section>
+
+    <section class="prose faq" aria-labelledby="calc-faq">
+      <h2 id="calc-faq">Frequently asked questions</h2>
+      <details>
+        <summary>How many bags of mortar do I need for 100 square feet of brick?</summary>
+        <p>A 100 sq ft single-wythe modular brick wall needs about 686 bricks, which is 19 bags of 80 lb mortar at best and 21 bags with 10% waste.</p>
+      </details>
+      <details>
+        <summary>How many blocks does one 80 lb bag of mortar lay?</summary>
+        <p>Up to 13 standard 8×8×16 in blocks at 3/8-in joints, per the Quikrete Mortar Mix No. 1102 data sheet — budget one bag per 12 blocks with waste. Sakrete lists 12 blocks for its Type S mix.</p>
+      </details>
+      <details>
+        <summary>How many bricks does one 80 lb bag of mortar lay?</summary>
+        <p>Up to 37 standard bricks at 3/8-in joints, per the Quikrete data sheet. Budget about 3 bags per 100 bricks with waste.</p>
+      </details>
+      <details>
+        <summary>What type of mortar should I use?</summary>
+        <p>Type N for most above-grade walls, Type S for below grade and retaining walls, Type M for foundations and heavy loads, Type O only for interior non-load-bearing work and repointing old soft brick (ASTM C270).</p>
+      </details>
+      <details>
+        <summary>Does a wider mortar joint use more mortar?</summary>
+        <p>Yes — a 1/2-in joint uses roughly a third more mortar than a 3/8-in joint. Fully bedded block also uses roughly a third more than face-shell bedding.</p>
+      </details>
+    </section>
+
+    <section class="related-tools" aria-labelledby="related">
+      <h2 id="related">Related calculators</h2>
+      <div class="tool-grid">
+        <a class="tool-card" href="../brick-calculator/index.html"><h3>Brick Calculator</h3><p>Bricks & mortar bags for single or double-wythe walls.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../concrete-block-calculator/index.html"><h3>Concrete Block Calculator</h3><p>Concrete blocks & mortar bags for block walls.</p><span class="card-cta">Open calculator →</span></a>
+        <a class="tool-card" href="../concrete-calculator/index.html"><h3>Concrete Calculator</h3><p>Bags of concrete & cubic yards for slabs, footings & posts.</p><span class="card-cta">Open calculator →</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../calculators/index.html">All Calculators</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../privacy.html">Privacy</a></li>
+          <li><a href="../../terms.html">Terms</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">© <span id="year">2026</span> TradeCalc. Free calculators for DIYers, homeowners &amp; pros.</p>
+    </div>
+  </footer>
+    <script src="../../assets/logic/mortar-calculator.js"></script>
+
+  <script>
+    (function () {
+      var T = window.TradeCalc;
+      document.getElementById('calc-go').addEventListener('click', function () {
+        var vals = {};
+        var inputs = document.querySelectorAll('#calc-form [data-field]');
+        var err = document.getElementById('calc-err');
+        var out = document.getElementById('calc-out');
+        Array.prototype.forEach.call(inputs, function (el) {
+          vals[el.getAttribute('data-field')] = el.value;
+        });
+        try {
+          out.innerHTML = T['mortar'](vals);
+          T.hideError(err);
+        } catch (e) {
+          T.showError(err, e.message);
+        }
+      });
+    })();
+  </script>
+
+  <script src="../../assets/main.js"></script>
+
+<div id="tc-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1f2937;color:#f9fafb;padding:14px 18px;font-size:14px;line-height:1.5;box-shadow:0 -2px 12px rgba(0,0,0,.25);font-family:system-ui,-apple-system,sans-serif;">
+  <span>We use cookies for anonymous analytics (Google Analytics) to see which pages are popular. No personal data is collected. <a href="https://mtansari8765lab.github.io/trade-calc/privacy.html" style="color:#93c5fd;text-decoration:underline;">Privacy policy</a></span>
+  <span style="display:inline-block;margin-left:12px;white-space:nowrap;margin-top:8px;">
+    <button id="tc-consent-accept" style="background:#2563eb;color:#fff;border:0;border-radius:6px;padding:8px 16px;margin-right:8px;cursor:pointer;font-size:14px;">Accept</button>
+    <button id="tc-consent-decline" style="background:transparent;color:#e5e7eb;border:1px solid #6b7280;border-radius:6px;padding:8px 16px;cursor:pointer;font-size:14px;">Decline</button>
+  </span>
+</div>
+<script>
+(function(){
+  var KEY='tc-consent-choice', banner=document.getElementById('tc-consent');
+  function apply(choice){
+    if(window.gtag){try{gtag('consent','update',{'analytics_storage':choice});}catch(e){}}
+    try{localStorage.setItem(KEY,choice);}catch(e){}
+    banner.hidden=true;
+  }
+  var saved=null;
+  try{saved=localStorage.getItem(KEY);}catch(e){}
+  if(saved==='granted'||saved==='denied'){ if(window.gtag){try{gtag('consent','update',{'analytics_storage':saved});}catch(e){}} }
+  else { banner.hidden=false; }
+  document.getElementById('tc-consent-accept').addEventListener('click',function(){apply('granted');});
+  document.getElementById('tc-consent-decline').addEventListener('click',function(){apply('denied');});
+})();
+</script>
+
+</body>
+</html>
