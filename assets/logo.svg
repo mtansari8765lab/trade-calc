@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+<g transform="translate(25 24)">
+<path d="M20 160 L125 68 L230 160" fill="none" stroke="#f97316" stroke-width="16" stroke-linejoin="round"/>
+<path d="M55 151 V112 L125 52 L195 112 V151" fill="#0b2545" stroke="#0b2545" stroke-width="7" stroke-linejoin="round"/>
+<rect x="105" y="111" width="42" height="40" fill="#ffffff"/>
+<path d="M165 150 V42 H197 V150 M207 150 V20 H238 V150" fill="none" stroke="#0b2545" stroke-width="12"/>
+<path d="M8 184 H245" stroke="#f59e0b" stroke-width="9" stroke-linecap="round"/>
+</g>
+<text x="300" y="155" font-family="Arial,Helvetica,sans-serif" font-size="110" font-weight="800" fill="#0b2545">Dr.</text>
+<text x="485" y="155" font-family="Arial,Helvetica,sans-serif" font-size="110" font-weight="800" fill="#f97316">Building</text>
+<text x="305" y="215" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="600" letter-spacing="2" fill="#334155">PLAN  •  CALCULATE  •  BUILD SMART</text>
+<path d="M300 240 H1090" stroke="#0b2545" stroke-width="8" stroke-linecap="round"/>
+</svg>

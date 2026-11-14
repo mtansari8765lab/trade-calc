@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="5 15 280 230">
+<g transform="translate(25 24)">
+<path d="M20 160 L125 68 L230 160" fill="none" stroke="#f97316" stroke-width="16" stroke-linejoin="round"/>
+<path d="M55 151 V112 L125 52 L195 112 V151" fill="#0b2545" stroke="#0b2545" stroke-width="7" stroke-linejoin="round"/>
+<rect x="105" y="111" width="42" height="40" fill="#ffffff"/>
+<path d="M165 150 V42 H197 V150 M207 150 V20 H238 V150" fill="none" stroke="#0b2545" stroke-width="12"/>
+<path d="M8 184 H245" stroke="#f59e0b" stroke-width="9" stroke-linecap="round"/>
+</g>
+</svg>
